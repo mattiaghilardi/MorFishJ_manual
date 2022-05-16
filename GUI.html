@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.411">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The MorFishJ User Manual - 2&nbsp; GUI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<link href="./set_scale.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<meta name="twitter:title" content="The MorFishJ User Manual - 2&nbsp; GUI">
+<meta name="twitter:creator" content="@mattiaghila">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GUI</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./" class="sidebar-logo-link">
+      <img src="./images/logo/MorFishJ_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">The MorFishJ User Manual</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/mattiaghilardi/MorFishJ_manual" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="./The-MorFishJ-User-Manual.pdf" title="Download PDF" class="sidebar-tool px-1"><i class="bi bi-file-pdf"></i></a>
+    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
+    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+            <i class="bi bi-bi-twitter pe-1"></i>
+          Twitter
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+            <i class="bi bi-bi-facebook pe-1"></i>
+          Facebook
+          </a>
+        </li>
+    </ul>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Installation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./GUI.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GUI</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./set_scale.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Set scale</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./straighten_rotate.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Straighten and rotate</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#morphometric-analyses" id="toc-morphometric-analyses" class="nav-link active" data-scroll-target="#morphometric-analyses"> <span class="header-section-number">2.1</span> Morphometric analyses</a></li>
+  <li><a href="#single-and-multiple-image-analysis" id="toc-single-and-multiple-image-analysis" class="nav-link" data-scroll-target="#single-and-multiple-image-analysis"> <span class="header-section-number">2.2</span> Single and multiple image analysis</a>
+  <ul class="collapse">
+  <li><a href="#single-image" id="toc-single-image" class="nav-link" data-scroll-target="#single-image"> <span class="header-section-number">2.2.1</span> Single Image</a></li>
+  <li><a href="#multiple-images" id="toc-multiple-images" class="nav-link" data-scroll-target="#multiple-images"> <span class="header-section-number">2.2.2</span> Multiple Images</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mattiaghilardi/MorFishJ_manual/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GUI</span></h1>
+</div>
+
+
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/MorFishJ_GUI_v0.0.1.png" class="img-fluid figure-img" alt="MorFishJ GUI" style="width:70.0%"></p>
+</figure>
+</div>
+<p>The GUI of <code>MorFishJ</code> provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.</p>
+<section id="morphometric-analyses" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="morphometric-analyses"><span class="header-section-number">2.1</span> Morphometric analyses</h2>
+<p>Three morphometric analyses are currently available in <code>MorFishJ</code>:</p>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<img src="images/icons/FishTraitsIcon.png" class="img-fluid" width="30"> Main Traits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The workhorse of MorFishJ. Performs a complete morphometric analysis measuring 22 traits that cover all body parts visible from side view images, excluding dorsal, pelvic, and anal fins.</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<img src="images/icons/HeadAnglesIcon.png" class="img-fluid" width="30"> Head Angles
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It allows to measure three head angles related to vision and feeding <span class="citation" data-cites="Brandl2013 Bellwood2014 Brandl2015">(<a href="references.html#ref-Brandl2013" role="doc-biblioref">Brandl and Bellwood 2013</a>; <a href="references.html#ref-Bellwood2014" role="doc-biblioref">Bellwood et al. 2014</a>; <a href="references.html#ref-Brandl2015" role="doc-biblioref">Brandl, Robbins, and Bellwood 2015</a>)</span>.</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+<img src="images/icons/GutTraitsIcon.png" class="img-fluid" width="30"> Gut Traits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It allows to measure three intestinal traits related to fish diet <span class="citation" data-cites="Ghilardi2021">(<a href="references.html#ref-Ghilardi2021" role="doc-biblioref">Ghilardi et al. 2021</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="single-and-multiple-image-analysis" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="single-and-multiple-image-analysis"><span class="header-section-number">2.2</span> Single and multiple image analysis</h2>
+<p>Each analysis have three different buttons:</p>
+<ul>
+<li><strong>Single Image</strong>: to analyse only one image (may be useful for beginners to get used to each step before analysing the entire image database).</li>
+<li><strong>Multiple Images…New</strong>: to start a new analysis of an image database.</li>
+<li><strong>Continued Analysis</strong>: to continue analysing an image database from where it was last left.</li>
+</ul>
+<section id="single-image" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="single-image"><span class="header-section-number">2.2.1</span> Single Image</h3>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>An image must be opened before starting a single image analysis.</p>
+</div>
+</div>
+<p>Clicking on the <code>Single Image</code> button of the desired analysis before opening an image will display the following message.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/single_image_error.png" class="img-fluid figure-img" alt="Error message for single image analysis" style="width:40.0%"></p>
+</figure>
+</div>
+<p>To open an image click on <strong>File –&gt; Open…</strong> or use the shortcut <strong>Ctrl+O</strong> or drag the image over the ImageJ GUI.</p>
+<p>Once the image is opened click on the <code>Single Image</code> button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The <code>ROI Manager</code> window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.</p>
+<p>The steps required to perform the selected analysis are explained in the following chapters.</p>
+</section>
+<section id="multiple-images" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="multiple-images"><span class="header-section-number">2.2.2</span> Multiple Images</h3>
+<section id="new-analysis" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="new-analysis">New analysis</h4>
+<p>Before starting to analyse an image database the new project should have a clear folder structure. <code>MorFishJ</code> does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the ROIs and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.</p>
+<pre><code>./ProjectName/
+├── raw_images
+│   ├── img1.JPG
+│   ├── img2.JPG
+│   ├── img3.JPG
+│   └── ...
+├── results
+└── ROIs</code></pre>
+<p>There are three subdirectories: one containing the raw images, one to save the ROIs and processed images, and one to save the results and log files.</p>
+<p>To start a new analysis click on the <code>Multiple Images...New</code> button of the desired analysis. The following dialog box appears.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/dialog_select_directories.png" class="img-fluid figure-img" alt="Dialog for directories selection" style="width:80.0%"></p>
+</figure>
+</div>
+<p>Use the <code>Browse</code> button to add the path to the input directory where the raw images are stored, and the output directories where the ROIs and results will be saved. Alternatively, it is possible to drag the directories over the dialog box. By default the results file will be named <strong>Traits</strong> and will be saved in <code>.csv</code> format, but it is possible to change both the name and the extension, which can be changed to <code>.txt</code> through the drop down list.</p>
+<p>Once all the fields are completed click <code>OK</code>. Two files are created in the selected directory for the results:</p>
+<ul>
+<li>a log file with the name <code>TraitLog</code> followed by the date of creation and including all the metadata required to restore the project.</li>
+<li>a results file with the selected name and extension. Results are appended to this file at the completion of the analysis of each image.</li>
+</ul>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not edit the <code>TraitLog</code> file by hand and do not change its directory!</p>
+</div>
+</div>
+<p>The first image in the input directory is automatically opened and duplicated. All the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The <code>ROI Manager</code> window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.</p>
+<p>The steps required to perform the selected analysis are explained in the following chapters.</p>
+</section>
+<section id="continued-analysis" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="continued-analysis">Continued analysis</h4>
+<p>To continue a project from where it was last left, click on the <code>Continued Analysis</code> button of the desired analysis. The following dialog box appears.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/load_traitlog.png" class="img-fluid figure-img" alt="Dialog for TraitLog file selection" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Use the <code>Browse</code> button or drag the file over the dialog box to add the path to the <code>TraitLog</code> file of the project. Thus click <code>OK</code>. The project is restored and can be continued from the next image. The new results will be appended to the existing results file.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Bellwood2014" class="csl-entry" role="doc-biblioentry">
+Bellwood, D. R., C. H. R. Goatley, S. J. Brandl, and O. Bellwood. 2014. <span>“<span class="nocase">Fifty million years of herbivory on coral reefs: fossils, fish and functional innovations</span>.”</span> <em>Proceedings of the Royal Society B: Biological Sciences</em> 281 (1781): 20133046. <a href="https://doi.org/10.1098/rspb.2013.3046">https://doi.org/10.1098/rspb.2013.3046</a>.
+</div>
+<div id="ref-Brandl2013" class="csl-entry" role="doc-biblioentry">
+Brandl, S. J., and D. R. Bellwood. 2013. <span>“<span class="nocase">Morphology, sociality, and ecology: can morphology predict pairing behavior in coral reef fishes?</span>”</span> <em>Coral Reefs</em> 32 (3): 835–46. <a href="https://doi.org/10.1007/s00338-013-1042-0">https://doi.org/10.1007/s00338-013-1042-0</a>.
+</div>
+<div id="ref-Brandl2015" class="csl-entry" role="doc-biblioentry">
+Brandl, S. J., W. D. Robbins, and D. R. Bellwood. 2015. <span>“<span class="nocase">Exploring the nature of ecological specialization in a coral reef fish community: morphology, diet and foraging microhabitat use</span>.”</span> <em>Proceedings of the Royal Society B: Biological Sciences</em> 282 (1815): 20151147. <a href="https://doi.org/10.1098/rspb.2015.1147">https://doi.org/10.1098/rspb.2015.1147</a>.
+</div>
+<div id="ref-Ghilardi2021" class="csl-entry" role="doc-biblioentry">
+Ghilardi, M., N. M. D. Schiettekatte, J. M. Casey, S. J. Brandl, S. Degregori, A. Mercière, F. Morat, Y. Letourneur, S. Bejarano, and V. Parravicini. 2021. <span>“<span class="nocase">Phylogeny, body morphology, and trophic level shape intestinal traits in coral reef fishes</span>.”</span> <em>Ecology and Evolution</em> 11 (19): 13218–31. <a href="https://doi.org/10.1002/ece3.8045">https://doi.org/10.1002/ece3.8045</a>.
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./set_scale.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Set scale</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/mattiaghilardi/MorFishJ">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/mattiaghilardi/MorFishJ/blob/master/LICENSE">License</a>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
