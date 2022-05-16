@@ -4,7 +4,7 @@ project:
 
 book:
   title: "The MorFishJ User Manual"
-  subtitle: "MorFishJ v0.0.1"
+  subtitle: MorFishJ v{{< var version >}}
   author: "Mattia Ghilardi"
   date: last-modified
   site-url: https://mattiaghilardi.github.io/MorFishJ_manual/
@@ -23,7 +23,7 @@ book:
       - icon: github
         href: https://github.com/mattiaghilardi/MorFishJ
       - text: "License"
-        href: https://github.com/mattiaghilardi/MorFishJ/blob/master/LICENSE
+        href: https://github.com/mattiaghilardi/MorFishJ/blob/main/LICENSE
     background: light
 
   sidebar: 

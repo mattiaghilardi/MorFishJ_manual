@@ -5,18 +5,17 @@
 Therefore, the installation of ImageJ (<https://imagej.nih.gov/ij/download.html>) or Fiji (<https://imagej.net/software/fiji/downloads>) is required before installing `MorFishJ`.
 
 ::: {.callout-warning}
-`MorFishJ` depends on `ImageJ 1.53e`, thus, if ImageJ/Fiji was previously installed, first check the current ImageJ version below the toolbar. If it is older than 1.53e, to update ImageJ click **Help --\> Update ImageJ...**, choose the latest version and click OK. Then ImageJ/Fiji must be restarted.
+`MorFishJ` depends on `ImageJ {{< var IJ_dep_version >}}`, thus, if ImageJ/Fiji was previously installed, first check the current ImageJ version below the toolbar. If it is older than {{< var IJ_dep_version >}}, to update ImageJ click **Help --\> Update ImageJ...**, choose the latest version and click OK. Then ImageJ/Fiji must be restarted.
 :::
 
 Once ImageJ/Fiji is installed/updated, proceed with installing `MorFishJ` following these steps:
 
 1.  Download `MorFishJ`:
     -   for people familiar with GitHub: clone or download the entire [GitHub repository](https://github.com/mattiaghilardi/MorFishJ);\
-    -   for people not familiar with GitHub: [click here](https://github.com/mattiaghilardi/MorFishJ) to go to the project's main page on GitHub, click on the green button `Code` and then click on `Download ZIP`.\
-2.  Extract the content.
-3.  Copy the `MorFishJ v0.0.1` folder in the `ImageJ/plugins/` or `Fiji.app/plugins/` directory.
+    -   for people not familiar with GitHub: [click here](https://github.com/mattiaghilardi/MorFishJ) to go to the project's main page on GitHub, click on the green button `Code`, then click on `Download ZIP`, thus extract the content.\
+2.  Copy the `MorFishJ v0.0.1` folder in the `ImageJ/plugins/` or `Fiji.app/plugins/` directory.
 
-Now `MorFishJ` is installed. Open ImageJ/FIJI and click **Plugins --\> MorFishJ v0.0.1 --\> MorFishJ GUI**. The following GUI appears in the upper left corner of the screen.
+Now `MorFishJ` is installed. Open ImageJ/FIJI and click **Plugins --\> MorFishJ v{{< var version >}} --\> MorFishJ GUI**. The following GUI appears in the upper left corner of the screen.
 
 ![](images/screenshots/MorFishJ_GUI_v0.0.1.png){fig-align="center" fig-alt="MorFishJ GUI" width="60%"}
 
