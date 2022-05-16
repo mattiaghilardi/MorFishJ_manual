@@ -1,7 +1,9 @@
 # Introduction {-}
 
-::: {.callout-warning}
-This manual is a work in progress.
+::: {.callout-caution icon=false}
+## Status of the manual
+
+Hi there! This manual is a work-in-progress.
 :::
 
 `MorFishJ` is an open-source software package for traditional morphometric analysis of fish from side view images in ImageJ. With `MorFishJ` you can collect morphological trait data from fish images in a standardised and reproducible way through a semi-automated procedure, which accelerates data collection and increases data accuracy by reducing user bias.

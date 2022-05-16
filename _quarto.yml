@@ -24,13 +24,13 @@ book:
         href: https://github.com/mattiaghilardi/MorFishJ
       - text: "License"
         href: https://github.com/mattiaghilardi/MorFishJ/blob/master/LICENSE
-    background: dark
+    background: light
 
   sidebar: 
     logo: images/logo/MorFishJ_logo.png
     pinned: true
     alignment: center
-    background: dark
+    background: light
     style: docked
     search: true
   chapters:
