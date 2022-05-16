@@ -1,0 +1,97 @@
+# GUI
+
+![](images/screenshots/MorFishJ_GUI_v0.0.1.png){width="70%" fig-align="center" fig-alt="MorFishJ GUI"}
+
+The GUI of `MorFishJ` provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.
+
+## Morphometric analyses
+
+Three morphometric analyses are currently available in `MorFishJ`:
+
+::: {.callout-note icon="false"}
+## ![](images/icons/FishTraitsIcon.png){width="30"} Main Traits
+
+The workhorse of MorFishJ. Performs a complete morphometric analysis measuring 22 traits that cover all body parts visible from side view images, excluding dorsal, pelvic, and anal fins.
+:::
+
+::: {.callout-note icon="false"}
+## ![](images/icons/HeadAnglesIcon.png){width="30"} Head Angles
+
+It allows to measure three head angles related to vision and feeding [@Brandl2013; @Bellwood2014; @Brandl2015].
+:::
+
+::: {.callout-note icon="false"}
+## ![](images/icons/GutTraitsIcon.png){width="30"} Gut Traits
+
+It allows to measure three intestinal traits related to fish diet [@Ghilardi2021].
+:::
+
+## Single and multiple image analysis
+
+Each analysis have three different buttons:
+
+-   **Single Image**: to analyse only one image (may be useful for beginners to get used to each step before analysing the entire image database).
+-   **Multiple Images...New**: to start a new analysis of an image database.
+-   **Continued Analysis**: to continue analysing an image database from where it was last left.
+
+### Single Image
+
+::: {.callout-warning}
+An image must be opened before starting a single image analysis.
+:::
+
+Clicking on the `Single Image` button of the desired analysis before opening an image will display the following message.
+
+![](images/screenshots/single_image_error.png){width="40%" fig-align="center" fig-alt="Error message for single image analysis"}
+
+To open an image click on **File --\> Open...** or use the shortcut **Ctrl+O** or drag the image over the ImageJ GUI.
+
+Once the image is opened click on the `Single Image` button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
+
+The steps required to perform the selected analysis are explained in the following chapters.
+
+### Multiple Images
+
+#### New analysis {-}
+
+Before starting to analyse an image database the new project should have a clear folder structure. `MorFishJ` does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the ROIs and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.
+
+```
+./ProjectName/
+├── raw_images
+│   ├── img1.JPG
+│   ├── img2.JPG
+│   ├── img3.JPG
+│   └── ...
+├── results
+└── ROIs
+```
+
+There are three subdirectories: one containing the raw images, one to save the ROIs and processed images, and one to save the results and log files.
+
+To start a new analysis click on the `Multiple Images...New` button of the desired analysis. The following dialog box appears.
+
+![](images/screenshots/dialog_select_directories.png){width="80%" fig-align="center" fig-alt="Dialog for directories selection"}
+
+Use the `Browse` button to add the path to the input directory where the raw images are stored, and the output directories where the ROIs and results will be saved. Alternatively, it is possible to drag the directories over the dialog box. By default the results file will be named **Traits** and will be saved in `.csv` format, but it is possible to change both the name and the extension, which can be changed to `.txt` through the drop down list.
+
+Once all the fields are completed click `OK`. Two files are created in the selected directory for the results:
+
+-   a log file with the name `TraitLog` followed by the date of creation and including all the metadata required to restore the project.
+-   a results file with the selected name and extension. Results are appended to this file at the completion of the analysis of each image.
+
+::: {.callout-important}
+Do not edit the `TraitLog` file by hand and do not change its directory!
+:::
+
+The first image in the input directory is automatically opened and duplicated. All the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
+
+The steps required to perform the selected analysis are explained in the following chapters.
+
+#### Continued analysis {-}
+
+To continue a project from where it was last left, click on the `Continued Analysis` button of the desired analysis. The following dialog box appears.
+
+![](images/screenshots/load_traitlog.png){width="60%" fig-align="center" fig-alt="Dialog for TraitLog file selection"}
+
+Use the `Browse` button or drag the file over the dialog box to add the path to the `TraitLog` file of the project. Thus click `OK`. The project is restored and can be continued from the next image. The new results will be appended to the existing results file.

@@ -1,0 +1,51 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "The MorFishJ User Manual"
+  subtitle: "MorFishJ v0.0.1"
+  author: "Mattia Ghilardi"
+  date: last-modified
+  site-url: https://mattiaghilardi.github.io/MorFishJ_manual/
+  repo-url: https://github.com/mattiaghilardi/MorFishJ_manual
+  repo-branch: main
+  repo-actions: [issue]
+  
+  image: images/logo/MorFishJ_logo.png
+  sharing: [twitter, facebook]
+  downloads: [pdf]
+  twitter-card: 
+    creator: "@mattiaghila"
+
+  page-footer:
+    center:
+      - icon: github
+        href: https://github.com/mattiaghilardi/MorFishJ
+      - text: "License"
+        href: https://github.com/mattiaghilardi/MorFishJ/blob/main/LICENSE
+    background: dark
+
+  sidebar: 
+    logo: images/logo/MorFishJ_logo.png
+    pinned: true
+    alignment: center
+    background: dark
+    style: docked
+    search: true
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - GUI.qmd
+    - set_scale.qmd
+    - straighten_rotate.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    fig-cap-location: bottom
+  pdf:
+    documentclass: scrreprt
