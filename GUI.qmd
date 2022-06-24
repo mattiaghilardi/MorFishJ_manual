@@ -28,7 +28,7 @@ It allows to measure three intestinal traits related to fish diet [@Ghilardi2021
 
 ## Single and multiple image analysis
 
-Each analysis have three different buttons:
+Each analysis has three different buttons:
 
 -   **Single Image**: to analyse only one image (may be useful for beginners to get used to each step before analysing the entire image database).
 -   **Multiple Images...New**: to start a new analysis of an image database.
@@ -77,7 +77,7 @@ Use the `Browse` button to add the path to the input directory where the raw ima
 
 Once all the fields are completed click `OK`. Two files are created in the selected directory for the results:
 
--   a log file with the name `TraitLog` followed by the date of creation and including all the metadata required to restore the project.
+-   a log file with the name `TraitLog` followed by the date of creation in `dd_mm_yyyy` format and including all the metadata required to restore the project.
 -   a results file with the selected name and extension. Results are appended to this file at the completion of the analysis of each image.
 
 ::: {.callout-important}
