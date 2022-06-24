@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.412">
+<meta name="generator" content="quarto-0.9.617">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,12 +36,13 @@ div.csl-indent {
 }
 </style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <link href="./set_scale.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -49,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -75,6 +76,7 @@ div.csl-indent {
 
 
 <meta name="twitter:title" content="The MorFishJ User Manual - 2&nbsp; GUI">
+<meta name="twitter:description" content="The GUI of MorFishJ provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.">
 <meta name="twitter:creator" content="@mattiaghila">
 <meta name="twitter:card" content="summary">
 </head>
@@ -188,8 +190,6 @@ div.csl-indent {
 
 
 
-
-
 <div class="quarto-title-meta">
 
     
@@ -250,7 +250,7 @@ div.csl-indent {
 </section>
 <section id="single-and-multiple-image-analysis" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="single-and-multiple-image-analysis"><span class="header-section-number">2.2</span> Single and multiple image analysis</h2>
-<p>Each analysis have three different buttons:</p>
+<p>Each analysis has three different buttons:</p>
 <ul>
 <li><strong>Single Image</strong>: to analyse only one image (may be useful for beginners to get used to each step before analysing the entire image database).</li>
 <li><strong>Multiple Images…New</strong>: to start a new analysis of an image database.</li>
@@ -304,7 +304,7 @@ Warning
 <p>Use the <code>Browse</code> button to add the path to the input directory where the raw images are stored, and the output directories where the ROIs and results will be saved. Alternatively, it is possible to drag the directories over the dialog box. By default the results file will be named <strong>Traits</strong> and will be saved in <code>.csv</code> format, but it is possible to change both the name and the extension, which can be changed to <code>.txt</code> through the drop down list.</p>
 <p>Once all the fields are completed click <code>OK</code>. Two files are created in the selected directory for the results:</p>
 <ul>
-<li>a log file with the name <code>TraitLog</code> followed by the date of creation and including all the metadata required to restore the project.</li>
+<li>a log file with the name <code>TraitLog</code> followed by the date of creation in <code>dd_mm_yyyy</code> format and including all the metadata required to restore the project.</li>
 <li>a results file with the selected name and extension. Results are appended to this file at the completion of the analysis of each image.</li>
 </ul>
 <div class="callout-important callout callout-style-default callout-captioned">
