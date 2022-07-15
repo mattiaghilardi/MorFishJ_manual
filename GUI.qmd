@@ -26,7 +26,7 @@ It allows to measure three head angles related to vision and feeding [@Brandl201
 It allows to measure three intestinal traits related to fish diet [@Ghilardi2021].
 :::
 
-## Single and multiple image analysis
+## Single and multiple image analysis {#sec-setup}
 
 Each analysis has three different buttons:
 
@@ -42,7 +42,7 @@ An image must be opened before starting a single image analysis.
 
 Clicking on the `Single Image` button of the desired analysis before opening an image will display the following message.
 
-![](images/screenshots/single_image_error.png){width="40%" fig-align="center" fig-alt="Error message for single image analysis"}
+![](images/screenshots/single_image_error.png){width="30%" fig-align="center" fig-alt="Error message for single image analysis"}
 
 To open an image click on **File --\> Open...** or use the shortcut **Ctrl+O** or drag the image over the ImageJ GUI.
 
@@ -71,9 +71,9 @@ There are three subdirectories: one containing the raw images, one to save the R
 
 To start a new analysis click on the `Multiple Images...New` button of the desired analysis. The following dialog box appears.
 
-![](images/screenshots/dialog_select_directories.png){width="80%" fig-align="center" fig-alt="Dialog for directories selection"}
+![](images/screenshots/dialog_select_directories.png){width="70%" fig-align="center" fig-alt="Dialog for directories selection"}
 
-Use the `Browse` button to add the path to the input directory where the raw images are stored, and the output directories where the ROIs and results will be saved. Alternatively, it is possible to drag the directories over the dialog box. By default the results file will be named **Traits** and will be saved in `.csv` format, but it is possible to change both the name and the extension, which can be changed to `.txt` through the drop down list.
+Use the `Browse` button to add the path to the input directory where the raw images are stored, and the output directories where the ROIs and results will be saved. Alternatively, it is possible to drag the directories over the dialog box. By default the results file will be named **Traits** and will be saved in `.csv` format, but it is possible to change both the name and the extension, which can be changed to `.txt` through the drop-down list.
 
 Once all the fields are completed click `OK`. Two files are created in the selected directory for the results:
 

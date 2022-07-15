@@ -16,7 +16,7 @@ book:
   sharing: [twitter, facebook]
   downloads: [pdf]
   twitter-card: 
-    creator: "@mattiaghila"
+    creator: "@MattiaGhila"
 
   page-footer:
     center:
@@ -39,6 +39,7 @@ book:
     - GUI.qmd
     - set_scale.qmd
     - straighten_rotate.qmd
+    - main_traits.qmd
     - references.qmd
 
 bibliography: references.bib

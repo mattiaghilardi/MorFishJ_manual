@@ -14,9 +14,9 @@ The following dialog box appears.
 
 ![](images/screenshots/set_scale_dialog.png){width="40%" fig-align="center" fig-alt="Set scale dialog"}
 
-Enter the known length of the traced line and select the unit from the drop down list. Three options are available (*mm*, *cm*, and *inch*), but any unit will then be converted to *cm*. Thus all linear measurements will be saved in *cm* and areas in *cm^2^*.
+Enter the known length of the traced line and select the unit from the drop-down list. Three options are available (*mm*, *cm*, and *inch*), but any unit will then be converted to *cm*. Thus all linear measurements will be saved in *cm* and areas in *cm^2^*.
 
-The traced line will be stored in the ROI Manager as `px.cm` and then saved with all other ROIs. A column `px/cm` will also be included in the results file indicating the scale of the images (pixels cm^-1^). 
+The traced line will be stored in the ROI Manager as `px.cm` and then saved with all other ROIs. A column `px.cm` will also be included in the results file indicating the scale of the images in pixels/cm. 
 
 ::: {.callout-warning}
 At the moment it is not possible to run the `Main Traits` and ` Gut Traits` analyses on images without a reference object or known fish length as setting the scale is required. However, in the upcoming update setting the scale will become optional and all images can be analysed.
