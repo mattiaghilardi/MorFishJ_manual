@@ -40,6 +40,7 @@ book:
     - set_scale.qmd
     - straighten_rotate.qmd
     - main_traits.qmd
+    - head_angles.qmd
     - references.qmd
 
 bibliography: references.bib

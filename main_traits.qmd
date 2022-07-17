@@ -66,7 +66,7 @@ While the majority of the analysis is automated, there are a number of steps tha
 
 2. Adjust the image if necessary as described in [Chapter -@sec-straighten_rotate].
 
-3. The following dialog allows to select the orientation of the fish (i.e., whether the fish is facing left or right) from a drop-down list. This step is important for the correct automatic placement of some reference lines and points.
+3. Select the orientation of the fish (i.e., whether the fish is facing left or right) from a drop-down list. This step is important for the correct automatic placement of some reference lines and points.
 
 ![](images/screenshots/orientation.png){width="30%" fig-align="center" fig-alt="Fish orientation"}
 
@@ -108,11 +108,15 @@ After clicking `OK` reference line L appears passing through the selected point 
 
 ![](images/screenshots/pectoral_fin_length.png){width="80%" fig-align="center" fig-alt="Example of pectoral fin length"}
 
-12. Place a point on the tip of the premaxilla (upper jaw) as in the example below. After clicking `OK` a new trait (Mo) is drawn and saved in the ROI manager.
+12. Place a point at the tip of the premaxilla (upper jaw) as in the example below. After clicking `OK` a new trait (Mo) is drawn and saved in the ROI manager.
 
 ![](images/screenshots/tip_upper_jaw.png){width="80%" fig-align="center" fig-alt="Example of point at the tip of upper jaw"}
 
-13. Place a point on the corner of the mouth. The point should be placed at the intersection between the maxilla and the mandible, not where the flesh of the upper and lower jaw meet! See the example below.
+13. Place a point at the corner of the mouth. 
+
+::: {.callout-important}
+The point should be placed at the intersection between the maxilla and the lower jaw ([fish skull anatomy](https://en.wikipedia.org/wiki/Fish_jaw#/media/File:FishKeyDay.jpg)), not where the flesh of the upper and lower jaw meet! See the example below.
+:::
 
 ::: {.panel-tabset}
 ## **Correct**
