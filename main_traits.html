@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.28">
+<meta name="generator" content="quarto-1.0.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -191,7 +191,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Main Traits</span></h1>
+<h1 class="title"><span id="sec-main_traits" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Main Traits</span></span></h1>
 </div>
 
 
@@ -205,11 +205,17 @@ div.csl-indent {
 
 </header>
 
-<p>The <code>Main Traits</code> analysis is the workhorse of <code>MorFishJ</code> as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines (<a href="#tbl-ref-lines">Table&nbsp;<span>5.1</span></a>) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in <a href="#tbl-traits-def">Table&nbsp;<span>5.2</span></a>.</p>
+<p>The <code>Main Traits</code> analysis is the workhorse of <code>MorFishJ</code> as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines (<a href="#fig-main-ref-lines">Figure&nbsp;<span>5.1</span></a>, <a href="#tbl-main-ref-lines">Table&nbsp;<span>5.1</span></a>) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in <a href="#fig-main-traits">Figure&nbsp;<span>5.2</span></a> and <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a>.</p>
+<div id="fig-main-ref-lines" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/main_ref_lines_sketch.png" class="img-fluid figure-img" alt="Reference lines for main traits analysis" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Figure 5.1: Reference lines traced on fish images for main traits analysis (see <a href="#tbl-main-ref-lines">Table&nbsp;<span>5.1</span></a> for descriptions)</figcaption><p></p>
+</figure>
+</div>
 <div class="column-screen-inset-right">
-<div id="tbl-ref-lines" class="anchored">
+<div id="tbl-main-ref-lines" class="anchored">
 <table class="table">
-<caption>Table 5.1: Reference lines traced on fish images to aid the measurement of morphometric parameters (<a href="#tbl-traits-def">Table&nbsp;<span>5.2</span></a>)</caption>
+<caption>Table 5.1: Description of reference lines traced on fish images for main traits analysis</caption>
 <thead>
 <tr class="header">
 <th>Reference line</th>
@@ -282,10 +288,47 @@ div.csl-indent {
 </table>
 </div>
 </div>
+<div id="fig-main-traits" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 80.0%;justify-content: center;">
+<div id="fig-main-linear" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/main_traits_sketch.png" class="img-fluid figure-img" alt="Linear measurements" data-ref-parent="fig-main-traits"></p>
+<p></p><figcaption class="figure-caption">(a) Linear measurements</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 80.0%;justify-content: center;">
+<div id="fig-main-areas" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/main_areas_sketch.png" class="img-fluid figure-img" alt="Surface areas" data-ref-parent="fig-main-traits"></p>
+<p></p><figcaption class="figure-caption">(b) Surface areas</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure 5.2: Morphometric parameters taken on fish images (see <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a> for descriptions)</figcaption><p></p>
+</figure>
+</div>
 <div class="column-screen-inset-right">
-<div id="tbl-traits-def" class="anchored">
+<div id="tbl-main-traits-def" class="anchored">
 <table class="table">
-<caption>Table 5.2: Morphometric parameters taken on fish images</caption>
+<caption>Table 5.2: Description of morphometric parameters taken on fish images</caption>
 <thead>
 <tr class="header">
 <th>Code</th>
@@ -574,12 +617,11 @@ Important
 </div>
 </div>
 <p>After clicking <code>OK</code> the last three traits are drawn and saved in the ROI manager.</p>
-<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new raw will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as <code>.jpg</code> files. The current image is closed and the next is opened. Repeat steps 1-13 for all images.</p>
-<p>It is possible to stop and restart the analyses (see <a href="GUI.html#sec-setup"><span>Section&nbsp;2.2</span></a>) without losing progress. Everything done until the last completed image is saved, thus, if the analysis is stopped before completing an image, only the steps performed on that image are lost.</p>
+<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as <code>.jpg</code> files. The current image is closed and the next is opened. Repeat steps 1-13 for all images.</p>
 </section>
 <section id="results" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="results"><span class="header-section-number">5.2</span> Results</h2>
-<p>The results file/table contains one row for each image and 25 columns. The first column, <code>image_id</code>, is the name of the image without extension. The second column, <code>px.cm</code>, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in <a href="#tbl-traits-def">Table&nbsp;<span>5.2</span></a>. Currently, all linear measurements are in centimetres and all areas in squared centimetres. The last column, <code>time</code>, is the time spent to analyse the image (steps 1-13) in seconds.</p>
+<p>The results file/table contains one row for each image and 25 columns. The first column, <code>image_id</code>, is the name of the image without extension. The second column, <code>px.cm</code>, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a>. Currently, all linear measurements are in centimetres and all areas in squared centimetres. The last column, <code>time</code>, is the time spent to analyse the image (steps 1-13) in seconds.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">

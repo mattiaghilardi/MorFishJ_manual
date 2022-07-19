@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.28">
+<meta name="generator" content="quarto-1.0.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -76,7 +76,7 @@ div.csl-indent {
 
 
 <meta name="twitter:title" content="The MorFishJ User Manual - 6&nbsp; Head Angles">
-<meta name="twitter:description" content="The Head Angles analysis allows to extract three angles (Table&nbsp;tbl-angles-def) related to vision and feeding (Brandl and Bellwood 2013; Bellwood et al. 2014; Brandl, Robbins, and Bellwood 2015).">
+<meta name="twitter:description" content="The Head Angles analysis allows to extract three angles (Figure&nbsp;fig-head-angles, Table&nbsp;tbl-angles-def) related to vision and feeding (Brandl and Bellwood 2013; Bellwood et al.">
 <meta name="twitter:creator" content="@MattiaGhila">
 <meta name="twitter:card" content="summary">
 </head>
@@ -191,7 +191,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Head Angles</span></h1>
+<h1 class="title"><span id="sec-head_angles" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Head Angles</span></span></h1>
 </div>
 
 
@@ -205,11 +205,17 @@ div.csl-indent {
 
 </header>
 
-<p>The <code>Head Angles</code> analysis allows to extract three angles (<a href="#tbl-angles-def">Table&nbsp;<span>6.1</span></a>) related to vision and feeding <span class="citation" data-cites="Brandl2013 Bellwood2014 Brandl2015">(<a href="references.html#ref-Brandl2013" role="doc-biblioref">Brandl and Bellwood 2013</a>; <a href="references.html#ref-Bellwood2014" role="doc-biblioref">Bellwood et al. 2014</a>; <a href="references.html#ref-Brandl2015" role="doc-biblioref">Brandl, Robbins, and Bellwood 2015</a>)</span>.</p>
+<p>The <code>Head Angles</code> analysis allows to extract three angles (<a href="#fig-head-angles">Figure&nbsp;<span>6.1</span></a>, <a href="#tbl-angles-def">Table&nbsp;<span>6.1</span></a>) related to vision and feeding <span class="citation" data-cites="Brandl2013 Bellwood2014 Brandl2015">(<a href="references.html#ref-Brandl2013" role="doc-biblioref">Brandl and Bellwood 2013</a>; <a href="references.html#ref-Bellwood2014" role="doc-biblioref">Bellwood et al. 2014</a>; <a href="references.html#ref-Brandl2015" role="doc-biblioref">Brandl, Robbins, and Bellwood 2015</a>)</span> from the coordinates of some reference lines and points (<a href="#fig-angles-ref-lines">Figure&nbsp;<span>6.2</span></a>, <a href="#tbl-angles-ref-lines">Table&nbsp;<span>6.2</span></a>).</p>
+<div id="fig-head-angles" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/head_angles_sketch.png" class="img-fluid figure-img" alt="Angles measured on fish head" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Figure 6.1: Angles measured on fish head (see <a href="#tbl-angles-def">Table&nbsp;<span>6.1</span></a> for descriptions)</figcaption><p></p>
+</figure>
+</div>
 <div class="column-screen-inset-right">
 <div id="tbl-angles-def" class="anchored">
 <table class="table">
-<caption>Table 6.1: Head angles measured on fish images</caption>
+<caption>Table 6.1: Angles measured on fish head</caption>
 <colgroup>
 <col style="width: 20%">
 <col style="width: 20%">
@@ -247,10 +253,16 @@ div.csl-indent {
 </table>
 </div>
 </div>
+<div id="fig-angles-ref-lines" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/head_ref_lines_sketch.png" class="img-fluid figure-img" alt="Reference lines and points for head angles analysis" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Figure 6.2: Reference lines and points traced on fish images for head angles analysis (see <a href="#tbl-angles-ref-lines">Table&nbsp;<span>6.2</span></a> for descriptions)</figcaption><p></p>
+</figure>
+</div>
 <div class="column-screen-inset-right">
 <div id="tbl-angles-ref-lines" class="anchored">
 <table class="table">
-<caption>Table 6.2: Reference lines and points traced on fish images to aid the measurement of head angles</caption>
+<caption>Table 6.2: Description of reference lines and points traced on fish images for head angles analysis</caption>
 <colgroup>
 <col style="width: 17%">
 <col style="width: 64%">
@@ -258,7 +270,7 @@ div.csl-indent {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Reference line</th>
+<th>Reference line/point</th>
 <th>Description</th>
 <th>User input</th>
 </tr>
@@ -350,7 +362,7 @@ div.csl-indent {
 <p><img src="images/screenshots/lower_L5_head.png" class="img-fluid figure-img" alt="Example of intersection between L5 and ventral of snout" style="width:80.0%"></p>
 </figure>
 </div>
-<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new raw will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as <code>.jpg</code> files. The current image is closed and the next is opened. Repeat steps 1-6 for all images.</p>
+<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as <code>.jpg</code> files. The current image is closed and the next is opened. Repeat steps 1-6 for all images.</p>
 </section>
 <section id="results" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="results"><span class="header-section-number">6.2</span> Results</h2>
