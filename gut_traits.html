@@ -15,6 +15,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -55,8 +74,10 @@ ul.task-list{list-style: none;}
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta name="twitter:title" content="The MorFishJ User Manual - 7&nbsp; Gut Traits">
+<meta name="twitter:description" content="The Gut Traits analysis allows to measure three intestinal traits related to fish diet (Table&nbsp;tbl-gut-def).">
 <meta name="twitter:creator" content="@MattiaGhila">
 <meta name="twitter:card" content="summary">
 </head>
@@ -162,7 +183,14 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link active" data-scroll-target="#analysis"> <span class="header-section-number">7.1</span> Analysis</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"> <span class="header-section-number">7.2</span> Results</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mattiaghilardi/MorFishJ_manual/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -183,8 +211,76 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<p>The <code>Gut Traits</code> analysis allows to measure three intestinal traits related to fish diet (<a href="#tbl-gut-def">Table&nbsp;<span>7.1</span></a>).</p>
+<div id="tbl-gut-def" class="anchored">
+<table class="table">
+<caption>Table 7.1: Morphometric parameters measured on fish intestine</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 37%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Code</th>
+<th>Trait</th>
+<th>Description</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GL</td>
+<td>Gut length</td>
+<td>Length of the intestine from the pyloric outlet to the anus in fishes with a stomach, or from the oesophagus to the anus in stomachless fishes</td>
+<td><span class="citation" data-cites="Ghilardi2021">Ghilardi et al. (<a href="references.html#ref-Ghilardi2021" role="doc-biblioref">2021</a>)</span></td>
+</tr>
+<tr class="even">
+<td>GD</td>
+<td>Gut diameter</td>
+<td>External diameter of the intestine (average of 10 measurements)</td>
+<td><span class="citation" data-cites="Ghilardi2021">Ghilardi et al. (<a href="references.html#ref-Ghilardi2021" role="doc-biblioref">2021</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>GS</td>
+<td>Gut surface area</td>
+<td>External surface area of the intestine calculated as GL x 2<span class="math inline">\(\pi\)</span>(GD/2)</td>
+<td><span class="citation" data-cites="Ghilardi2021">Ghilardi et al. (<a href="references.html#ref-Ghilardi2021" role="doc-biblioref">2021</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="analysis" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="analysis"><span class="header-section-number">7.1</span> Analysis</h2>
+<p>Once the steps described in <a href="GUI.html#sec-setup"><span>Section&nbsp;2.2</span></a> are completed the screen will be populated with a number of windows:</p>
+<ul>
+<li>the ImageJ/Fiji main window</li>
+<li>the MorFishJ GUI</li>
+<li>a fish image (this is a duplicate of the raw image to prevent any modification)</li>
+<li>the ROI manager</li>
+<li>the <code>Set scale</code> dialog</li>
+</ul>
+<p>This analysis has a few steps that require the user input:</p>
+<ol type="1">
+<li><p>Set the scale for the image as described in <a href="set_scale.html">Chapter&nbsp;<span>3</span></a>.</p></li>
+<li><p>Trace a segmented line following the midline of the intestine as shown below. After clicking <code>OK</code> 10 points appears equally distributed along this line.</p></li>
+<li><p>At the level of the point closest to the oesophagus, trace a straight line perpendicular to the midline traced in the previous step and joining the two margins of the intestine.</p></li>
+<li><p>Repeat step 3 for each point in order moving towards the anus.</p></li>
+</ol>
+<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory. The current image is closed and the next is opened. Repeat steps 1-4 for all images.</p>
+</section>
+<section id="results" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="results"><span class="header-section-number">7.2</span> Results</h2>
+<p>The results file/table contains one row for each image and 16 columns. The first column, <code>image_id</code>, is the name of the image without extension. The second column, <code>px.cm</code>, is the scale of the image in pixels/cm. The columns 3-5 are the traits described in <a href="#tbl-gut-def">Table&nbsp;<span>7.1</span></a> in centimetres (cm<sup>2</sup> for GS). The columns 6-15 are the 10 raw measurements of the diameter (GD1-GD10) in order from the oesophagous to the anus. The last column, <code>time</code>, is the time spent to analyse the image (steps 1-4) in seconds.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-Ghilardi2021" class="csl-entry" role="doc-biblioentry">
+Ghilardi, M., N. M. D. Schiettekatte, J. M. Casey, S. J. Brandl, S. Degregori, A. Mercière, F. Morat, Y. Letourneur, S. Bejarano, and V. Parravicini. 2021. <span>“<span class="nocase">Phylogeny, body morphology, and trophic level shape intestinal traits in coral reef fishes</span>.”</span> <em>Ecology and Evolution</em> 11 (19): 13218–31. <a href="https://doi.org/10.1002/ece3.8045">https://doi.org/10.1002/ece3.8045</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
