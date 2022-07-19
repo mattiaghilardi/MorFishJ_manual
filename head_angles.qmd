@@ -1,34 +1,31 @@
 # Head Angles {#sec-head_angles}
 
-The `Head Angles` analysis allows to extract three angles (@fig-head-angles, @tbl-angles-def) related to vision and feeding [@Brandl2013; @Bellwood2014; @Brandl2015] from the coordinates of some reference lines and points (@fig-angles-ref-lines, @tbl-angles-ref-lines). 
+The `Head Angles` analysis allows to extract three angles (@fig-head-angles, @tbl-angles-def) related to vision and feeding [@Brandl2013; @Bellwood2014; @Brandl2015] from the coordinates of some reference lines and points (@fig-angles-ref-lines, @tbl-angles-ref-lines).
 
-![Angles measured on fish head (see @tbl-angles-def for descriptions)](images/drawings/head_angles_sketch.png){width="50%" fig-align="center" fig-alt="Angles measured on fish head" #fig-head-angles}
+![Angles measured on fish head (see @tbl-angles-def for descriptions)](images/drawings/head_angles_sketch.png){#fig-head-angles width="50%" fig-align="center" fig-alt="Angles measured on fish head"}
 
-::: column-screen-inset-right
-| Code | Trait                                         | Description                                                                                                                                                                                          | Reference                                                                        |
-|---------------|---------------|-----------------------------|---------------|
-| Ha   | Head angle                                  | The angle formed by a line connecting the tip of the premaxilla (P1) to the point where line L5 crosses the upper margin of the snout and a line connecting the latter point to the intersection between lines L3 and L4                                                                                | @Brandl2013    |
-| Sa   | Snout angle                               | The angle formed by the two lines drawn to the tip of the premaxilla (P1) from the point where line L5 crosses the upper and lower margins of the snout                                                                                                              | @Brandl2013 |
-| EMa  | Eye-mouth angle                               | The angle formed by a line connecting the tip of the premaxilla (P1) to the eye centroid and a horizontal line intersecting P1                                                                                                                     | @Bellwood2014                                                                    |
+| Code | Trait           | Description                                                                                                                                                                                                              | Reference     |
+|----------------|----------------|-------------------------|----------------|
+| Ha   | Head angle      | The angle formed by a line connecting the tip of the premaxilla (P1) to the point where line L5 crosses the upper margin of the snout and a line connecting the latter point to the intersection between lines L3 and L4 | @Brandl2013   |
+| Sa   | Snout angle     | The angle formed by the two lines drawn to the tip of the premaxilla (P1) from the point where line L5 crosses the upper and lower margins of the snout                                                                  | @Brandl2013   |
+| EMa  | Eye-mouth angle | The angle formed by a line connecting the tip of the premaxilla (P1) to the eye centroid and a horizontal line intersecting P1                                                                                           | @Bellwood2014 |
 
 : Angles measured on fish head {#tbl-angles-def}
-:::
 
-![Reference lines and points traced on fish images for head angles analysis (see @tbl-angles-ref-lines for descriptions)](images/drawings/head_ref_lines_sketch.png){width="50%" fig-align="center" fig-alt="Reference lines and points for head angles analysis" #fig-angles-ref-lines}
+![Reference lines and points traced on fish images for head angles analysis (see @tbl-angles-ref-lines for descriptions)](images/drawings/head_ref_lines_sketch.png){#fig-angles-ref-lines width="50%" fig-align="center" fig-alt="Reference lines and points for head angles analysis"}
 
-::: column-screen-inset-right
-| Reference line/point | Description                                                                                                                                                                                                                                                                                                                                         | User input |
-|-------------|-----------------------------------------------|-------------|
-| P1              | Anterior tip of the premaxilla (upper jaw)                                                                                                                                                                                                                                                                                         | Yes        |
-| L1              | Horizontal line cutting the eye in halves                                                                                                                                                                                                                                                                                         | No[^1]        |
-| L2              | Vertical line cutting the eye in halves                                                                                                                                                                                                                                                                              | No         |
-| L3              | Vertical line touching the anterior margin of the eye                                                                                                                                                                                                                                                                               | No         |
-| L4              | Horizontal line touching the upper margin of the eye                                                                                                                                                                                                                                                                                           | No         |
-| L5              | Vertical line half way between L3 and P1                                                                                                                                                                                                                                                                                     | No         |
+| Reference line/point | Description                                           | User input         |
+|---------------|------------------------------------------|---------------|
+| P1                   | Anterior tip of the premaxilla (upper jaw)            | Yes                |
+| L1                   | Horizontal line cutting the eye in halves             | No[^head_angles-1] |
+| L2                   | Vertical line cutting the eye in halves               | No                 |
+| L3                   | Vertical line touching the anterior margin of the eye | No                 |
+| L4                   | Horizontal line touching the upper margin of the eye  | No                 |
+| L5                   | Vertical line half way between L3 and P1              | No                 |
 
 : Description of reference lines and points traced on fish images for head angles analysis {#tbl-angles-ref-lines}
-:::
-[^1]: The user needs to trace an ellipse around the eye and lines L1-L4 can be automatically drawn from the coordinates of this selection.
+
+[^head_angles-1]: The user has to trace an ellipse around the eye and lines L1-L4 will be automatically drawn from the coordinates of this selection.
 
 ## Analysis
 
@@ -52,7 +49,6 @@ This analysis has six steps that require the user input:
 
 ![](images/screenshots/tip_upper_jaw_head.png){width="80%" fig-align="center" fig-alt="Example of point at the tip of upper jaw"}
 
-
 4. Trace an ellipse around the eye as shown below (see [Elliptical Selection Tool](https://imagej.nih.gov/ij/docs/guide/146-19.html) for specific instructions on how to use this tool). After clicking `OK` five reference lines (L1-L5) are drawn.
 
 ![](images/screenshots/eye_ellipse_head.png){width="80%" fig-align="center" fig-alt="Example of ellipse around the eye"}
@@ -65,8 +61,8 @@ This analysis has six steps that require the user input:
 
 ![](images/screenshots/lower_L5_head.png){width="80%" fig-align="center" fig-alt="Example of intersection between L5 and ventral of snout"}
 
-The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-6 for all images. 
+The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-6 for all images.
 
 ## Results
 
-The results file/table contains one row for each image and 5 columns. The first column, `image_id`, is the name of the image without extension. The columns 2-4 are the angles described in [@tbl-angles-def] in degrees. The last column, `time`, is the time spent to analyse the image (steps 1-6) in seconds. 
+The results file/table contains one row for each image and 5 columns. The first column, `image_id`, is the name of the image without extension. The columns 2-4 are the angles described in [@tbl-angles-def] in degrees. The last column, `time`, is the time spent to analyse the image (steps 1-6) in seconds.
