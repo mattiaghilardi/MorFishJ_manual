@@ -1,6 +1,8 @@
-# Head Angles
+# Head Angles {#sec-head_angles}
 
-The `Head Angles` analysis allows to extract three angles ([@tbl-angles-def]) related to vision and feeding [@Brandl2013; @Bellwood2014; @Brandl2015]. 
+The `Head Angles` analysis allows to extract three angles (@fig-head-angles, @tbl-angles-def) related to vision and feeding [@Brandl2013; @Bellwood2014; @Brandl2015] from the coordinates of some reference lines and points (@fig-angles-ref-lines, @tbl-angles-ref-lines). 
+
+![Angles measured on fish head (see @tbl-angles-def for descriptions)](images/drawings/head_angles_sketch.png){width="50%" fig-align="center" fig-alt="Angles measured on fish head" #fig-head-angles}
 
 ::: column-screen-inset-right
 | Code | Trait                                         | Description                                                                                                                                                                                          | Reference                                                                        |
@@ -9,11 +11,13 @@ The `Head Angles` analysis allows to extract three angles ([@tbl-angles-def]) re
 | Sa   | Snout angle                               | The angle formed by the two lines drawn to the tip of the premaxilla (P1) from the point where line L5 crosses the upper and lower margins of the snout                                                                                                              | @Brandl2013 |
 | EMa  | Eye-mouth angle                               | The angle formed by a line connecting the tip of the premaxilla (P1) to the eye centroid and a horizontal line intersecting P1                                                                                                                     | @Bellwood2014                                                                    |
 
-: Head angles measured on fish images {#tbl-angles-def}
+: Angles measured on fish head {#tbl-angles-def}
 :::
 
+![Reference lines and points traced on fish images for head angles analysis (see @tbl-angles-ref-lines for descriptions)](images/drawings/head_ref_lines_sketch.png){width="50%" fig-align="center" fig-alt="Reference lines and points for head angles analysis" #fig-angles-ref-lines}
+
 ::: column-screen-inset-right
-| Reference line | Description                                                                                                                                                                                                                                                                                                                                         | User input |
+| Reference line/point | Description                                                                                                                                                                                                                                                                                                                                         | User input |
 |-------------|-----------------------------------------------|-------------|
 | P1              | Anterior tip of the premaxilla (upper jaw)                                                                                                                                                                                                                                                                                         | Yes        |
 | L1              | Horizontal line cutting the eye in halves                                                                                                                                                                                                                                                                                         | No[^1]        |
@@ -22,7 +26,7 @@ The `Head Angles` analysis allows to extract three angles ([@tbl-angles-def]) re
 | L4              | Horizontal line touching the upper margin of the eye                                                                                                                                                                                                                                                                                           | No         |
 | L5              | Vertical line half way between L3 and P1                                                                                                                                                                                                                                                                                     | No         |
 
-: Reference lines and points traced on fish images to aid the measurement of head angles {#tbl-angles-ref-lines}
+: Description of reference lines and points traced on fish images for head angles analysis {#tbl-angles-ref-lines}
 :::
 [^1]: The user needs to trace an ellipse around the eye and lines L1-L4 can be automatically drawn from the coordinates of this selection.
 
@@ -61,7 +65,7 @@ This analysis has six steps that require the user input:
 
 ![](images/screenshots/lower_L5_head.png){width="80%" fig-align="center" fig-alt="Example of intersection between L5 and ventral of snout"}
 
-The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new raw will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-6 for all images. 
+The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-6 for all images. 
 
 ## Results
 

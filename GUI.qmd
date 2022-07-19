@@ -86,9 +86,15 @@ Do not edit the `TraitLog` file by hand and do not change its directory!
 
 The first image in the input directory is automatically opened and duplicated. All the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
 
-The steps required to perform the selected analysis are explained in the following chapters.
+The steps required to perform the selected analysis are explained in:
+
+- [Chapter -@sec-main_traits]: **Main Traits**
+- [Chapter -@sec-head_angles]: **Head Angles**
+- [Chapter -@sec-gut_traits]: **Gut Traits**
 
 #### Continued analysis {-}
+
+It is possible to stop and restart each analysis without losing progress. Everything done until the last completed image is saved, thus, if the analysis is stopped before completing an image, only the steps performed on that image are lost.
 
 To continue a project from where it was last left, click on the `Continued Analysis` button of the desired analysis. The following dialog box appears.
 

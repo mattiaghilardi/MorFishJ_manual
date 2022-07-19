@@ -1,6 +1,8 @@
-# Main Traits
+# Main Traits {#sec-main_traits}
 
-The `Main Traits` analysis is the workhorse of `MorFishJ` as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines ([@tbl-ref-lines]) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in [@tbl-traits-def].
+The `Main Traits` analysis is the workhorse of `MorFishJ` as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines (@fig-main-ref-lines, @tbl-main-ref-lines) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in @fig-main-traits and @tbl-main-traits-def.
+
+![Reference lines traced on fish images for main traits analysis (see @tbl-main-ref-lines for descriptions)](images/drawings/main_ref_lines_sketch.png){width="80%" fig-align="center" fig-alt="Reference lines for main traits analysis" #fig-main-ref-lines}
 
 ::: column-screen-inset-right
 | Reference line | Description                                                                                                                                                                                                                                                                                                                                         | User input |
@@ -18,7 +20,16 @@ The `Main Traits` analysis is the workhorse of `MorFishJ` as it performs a compl
 | K              | Vertical line cutting the eye in halves                                                                                                                                                                                                                                                                                                             | Yes        |
 | L              | Vertical line at the pectoral fin insertion                                                                                                                                                                                                                                                                                                         | Yes        |
 
-: Reference lines traced on fish images to aid the measurement of morphometric parameters (@tbl-traits-def) {#tbl-ref-lines}
+: Description of reference lines traced on fish images for main traits analysis {#tbl-main-ref-lines}
+:::
+
+::: {#fig-main-traits layout="[[-10, 80, -10], [-10, 80, -10]]"}
+
+![Linear measurements](images/drawings/main_traits_sketch.png){fig-alt="Linear measurements" #fig-main-linear}
+
+![Surface areas](images/drawings/main_areas_sketch.png){fig-alt="Surface areas" #fig-main-areas}
+
+Morphometric parameters taken on fish images (see @tbl-main-traits-def for descriptions)
 :::
 
 ::: column-screen-inset-right
@@ -47,7 +58,7 @@ The `Main Traits` analysis is the workhorse of `MorFishJ` as it performs a compl
 | PFi  | Pectoral fin position                         | Vertical distance from the upper insertion of the pectoral fin to the bottom of the body (C)                                                                                                        | @Touissant2016                                                                   |
 | PFb  | Body depth at level of pectoral fin insertion | Body depth measured along L                                                                                                                                                                         | @Villeger2010                                                                    |
 
-: Morphometric parameters taken on fish images {#tbl-traits-def}
+: Description of morphometric parameters taken on fish images {#tbl-main-traits-def}
 :::
 
 ## Analysis
@@ -130,10 +141,8 @@ The point should be placed at the intersection between the maxilla and the lower
 
 After clicking `OK` the last three traits are drawn and saved in the ROI manager.
 
-The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new raw will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-13 for all images. 
-
-It is possible to stop and restart the analyses (see @sec-setup) without losing progress. Everything done until the last completed image is saved, thus, if the analysis is stopped before completing an image, only the steps performed on that image are lost. 
+The analysis of the image is completed. In case of single image analysis a window named `Traits` containing all the results appears. This can be saved by clicking on `File -> Save As...`. All ROIs in the ROI manager can also be saved as a zip file by clicking on `More >>> -> Save...`. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory, where also the rotated or straightened images are saved as `.jpg` files. The current image is closed and the next is opened. Repeat steps 1-13 for all images. 
 
 ## Results
 
-The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in [@tbl-traits-def]. Currently, all linear measurements are in centimetres and all areas in squared centimetres. The last column, `time`, is the time spent to analyse the image (steps 1-13) in seconds. 
+The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in [@tbl-main-traits-def]. Currently, all linear measurements are in centimetres and all areas in squared centimetres. The last column, `time`, is the time spent to analyse the image (steps 1-13) in seconds. 
