@@ -1,13 +1,10 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
-\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
   letterpaper,
-  DIV=11,
-  numbers=noendperiod,
-  oneside]{scrreprt}
+]{scrbook}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -42,11 +39,7 @@
 \hypersetup{
   pdftitle={The MorFishJ User Manual},
   pdfauthor={Mattia Ghilardi},
-  colorlinks=true,
-  linkcolor={blue},
-  filecolor={Maroon},
-  citecolor={Blue},
-  urlcolor={Blue},
+  hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[left=1in,marginparwidth=2.0666666666667in,textwidth=4.1333333333333in,marginparsep=0.3in]{geometry}
@@ -111,7 +104,6 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\KOMAoption{captions}{tableheading}
 \makeatletter
 \@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
 \@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
@@ -194,33 +186,34 @@
 \makeatother
 \subtitle{MorFishJ v0.0.1}
 \author{Mattia Ghilardi}
-\date{2022-07-19T14:49:22+02:00}
+\date{2022-07-19T15:11:20+02:00}
 
 \begin{document}
+\frontmatter
 \maketitle
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, sharp corners, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
-\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
+\mainmatter
 \hypertarget{introduction}{%
 \chapter*{Introduction}\label{introduction}}
 \addcontentsline{toc}{chapter}{Introduction}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-caution-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title={Status of the manual}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-caution-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-caution-color-frame, colbacktitle=quarto-callout-caution-color!10!white, title={Status of the manual}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 Hi there! This manual is a work-in-progress.
 \end{tcolorbox}
 
-\texttt{MorFishJ} is an open-source software package for traditional
-morphometric analysis of fish from side view images in ImageJ. With
-\texttt{MorFishJ} you can collect morphological trait data from fish
-images in a standardised and reproducible way through a semi-automated
-procedure, which accelerates data collection and increases data accuracy
-by reducing user bias.
+\href{https://github.com/mattiaghilardi/MorFishJ}{\texttt{MorFishJ}} is
+an open-source software package for traditional morphometric analysis of
+fish from side view images in ImageJ. With \texttt{MorFishJ} you can
+collect morphological trait data from fish images in a standardised and
+reproducible way through a semi-automated procedure, which accelerates
+data collection and increases data accuracy by reducing user bias.
 
 \hypertarget{motivation}{%
 \section*{Motivation}\label{motivation}}
@@ -257,9 +250,12 @@ different researchers as a standardised protocol does not exist yet,
 making it impractical to merge data obtained from multiple studies.
 
 \hypertarget{the-morfishj-package}{%
-\section*{\texorpdfstring{The \texttt{MorFishJ}
+\section*{\texorpdfstring{The
+\href{https://github.com/mattiaghilardi/MorFishJ}{\texttt{MorFishJ}}
 package}{The MorFishJ package}}\label{the-morfishj-package}}
-\addcontentsline{toc}{section}{The \texttt{MorFishJ} package}
+\addcontentsline{toc}{section}{The
+\href{https://github.com/mattiaghilardi/MorFishJ}{\texttt{MorFishJ}}
+package}
 
 \texttt{MorFishJ} allows users to perform a complete morphometric
 characterisation in a limited time while recording and storing all
@@ -291,7 +287,7 @@ Therefore, the installation of ImageJ
 (\url{https://imagej.net/software/fiji/downloads}) is required before
 installing \texttt{MorFishJ}.
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-warning-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-warning-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 \texttt{MorFishJ} depends on \texttt{ImageJ\ 1.53e}, thus, if
 ImageJ/Fiji was previously installed, first check the current ImageJ
 version below the toolbar. If it is older than 1.53e, to update ImageJ
@@ -339,7 +335,7 @@ screen.
 
 \end{figure}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-tip-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 In Fiji the Plugins menu is often crowded, thus it may be easier to use
 the \texttt{Search} field under the toolbar to find and start
 \texttt{MorFishJ}.
@@ -366,22 +362,22 @@ the appropriate button.
 Three morphometric analyses are currently available in
 \texttt{MorFishJ}:
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/FishTraitsIcon.png}
-Main Traits}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-note-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/FishTraitsIcon.png}
+Main Traits}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 The workhorse of MorFishJ. Performs a complete morphometric analysis
 measuring 22 traits that cover all body parts visible from side view
 images, excluding dorsal, pelvic, and anal fins.
 \end{tcolorbox}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/HeadAnglesIcon.png}
-Head Angles}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-note-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/HeadAnglesIcon.png}
+Head Angles}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 It allows to measure three head angles related to vision and feeding
 (Brandl and Bellwood 2013; Bellwood et al. 2014; Brandl, Robbins, and
 Bellwood 2015).
 \end{tcolorbox}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/GutTraitsIcon.png}
-Gut Traits}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-note-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, title={\includegraphics[width=0.3125in,height=\textheight]{./images/icons/GutTraitsIcon.png}
+Gut Traits}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 It allows to measure three intestinal traits related to fish diet
 (Ghilardi et al. 2021).
 \end{tcolorbox}
@@ -408,7 +404,7 @@ Each analysis has three different buttons:
 \hypertarget{single-image}{%
 \subsection{Single Image}\label{single-image}}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-warning-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-warning-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 An image must be opened before starting a single image analysis.
 \end{tcolorbox}
 
@@ -500,7 +496,7 @@ created in the selected directory for the results:
   appended to this file at the completion of the analysis of each image.
 \end{itemize}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-important-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-important-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 Do not edit the \texttt{TraitLog} file by hand and do not change its
 directory!
 \end{tcolorbox}
@@ -521,7 +517,7 @@ The steps required to perform the selected analysis are explained in:
 \item
   Chapter~\ref{sec-head_angles}: \textbf{Head Angles}
 \item
-  \textbf{?@sec-gut\_traits}: \textbf{Gut Traits}
+  Chapter~\ref{sec-gut_traits}: \textbf{Gut Traits}
 \end{itemize}
 
 \hypertarget{continued-analysis}{%
@@ -567,7 +563,7 @@ The following dialog box appears.
 
 Trace a straight line on a reference object and click \texttt{OK}.
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-tip-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 The reference object can also be the fish itself if its length
 (standard, fork, or total) is known. In this case trace a line over the
 fish to select the appropriate length.
@@ -594,7 +590,7 @@ then saved with all other ROIs. A column \texttt{px.cm} will also be
 included in the results file indicating the scale of the images in
 pixels/cm.
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-warning-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-warning-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 At the moment it is not possible to run the \texttt{Main\ Traits} and
 \texttt{Gut\ Traits} analyses on images without a reference object or
 known fish length as setting the scale is required. However, in the
@@ -668,12 +664,12 @@ an example of fish straightening.
 
 \includegraphics{./images/screenshots/straightened_example.png}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-tip-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 Selecting \texttt{Spline\ fit} within the \texttt{Line\ Width} window
 can improve the selection and straightening of the fish.
 \end{tcolorbox}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-warning-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-warning-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 If the fish is overly bent, straightening can lead to deformation of the
 body which affects the measurement of the traits. Use this option with
 care.
@@ -1019,7 +1015,7 @@ steps that require the user input:
   selection is completed it can be adjusted as needed.
 \end{enumerate}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-tip-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-tip-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 The points that define the selection can be moved. To add a new point to
 the selection press \texttt{Shift} and click on an existing point. To
 remove one point press \texttt{Alt} and click on the point. See
@@ -1188,7 +1184,7 @@ together with all reference lines.
   Place a point at the corner of the mouth.
 \end{enumerate}
 
-\begin{tcolorbox}[standard jigsaw,arc=.35mm, toptitle=1mm, titlerule=0mm, bottomtitle=1mm, left=2mm, colbacktitle=quarto-callout-important-color!10!white, colback=white, opacityback=0, leftrule=.75mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, opacitybacktitle=0.6, colframe=quarto-callout-important-color-frame]
+\begin{tcolorbox}[standard jigsaw,bottomtitle=1mm, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, titlerule=0mm, opacityback=0, arc=.35mm, opacitybacktitle=0.6, rightrule=.15mm, toprule=.15mm, coltitle=black, left=2mm, colback=white, leftrule=.75mm, bottomrule=.15mm]
 The point should be placed at the intersection between the maxilla and
 the lower jaw
 (\href{https://en.wikipedia.org/wiki/Fish_jaw\#/media/File:FishKeyDay.jpg}{fish
@@ -1504,6 +1500,9 @@ extension. The columns 2-4 are the angles described in
 Table~\ref{tbl-angles-def} in degrees. The last column, \texttt{time},
 is the time spent to analyse the image (steps 1-6) in seconds.
 
+\hypertarget{sec-gut_traits}{%
+\chapter{Gut Traits}\label{sec-gut_traits}}
+
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
@@ -1558,5 +1557,6 @@ Applications} 20 (6): 1512--22. \url{https://doi.org/10.1890/09-1310.1}.
 \end{CSLReferences}
 
 
+\backmatter
 
 \end{document}

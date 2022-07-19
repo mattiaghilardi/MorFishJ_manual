@@ -41,6 +41,7 @@ book:
     - straighten_rotate.qmd
     - main_traits.qmd
     - head_angles.qmd
+    - gut_traits.qmd
     - references.qmd
 
 bibliography: references.bib
