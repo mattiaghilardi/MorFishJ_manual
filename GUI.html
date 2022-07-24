@@ -200,7 +200,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GUI</span></h1>
+<h1 class="title"><span id="sec-gui" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">GUI</span></span></h1>
 </div>
 
 
@@ -292,15 +292,20 @@ Warning
 <p><img src="images/screenshots/single_image_error.png" class="img-fluid figure-img" alt="Error message for single image analysis" style="width:30.0%"></p>
 </figure>
 </div>
-<p>To open an image click on <strong>File –&gt; Open…</strong> or use the shortcut <strong>Ctrl+O</strong> or drag the image over the ImageJ GUI.</p>
-<p>Once the image is opened click on the <code>Single Image</code> button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The <code>ROI Manager</code> window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.</p>
-<p>The steps required to perform the selected analysis are explained in the following chapters.</p>
+<p>To open an image click on <strong>File –&gt; Open…</strong> or use the shortcut <strong>Ctrl+O</strong> or drag the image over the ImageJ main window.</p>
+<p>Once the image is opened, click on the <code>Single Image</code> button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The <code>ROI Manager</code> window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.</p>
+<p>The steps required to perform the selected analysis are explained in:</p>
+<ul>
+<li><a href="main_traits.html">Chapter&nbsp;<span>5</span></a>: <strong>Main Traits</strong></li>
+<li><a href="head_angles.html">Chapter&nbsp;<span>6</span></a>: <strong>Head Angles</strong></li>
+<li><a href="gut_traits.html">Chapter&nbsp;<span>7</span></a>: <strong>Gut Traits</strong></li>
+</ul>
 </section>
 <section id="multiple-images" class="level3" data-number="2.2.2">
 <h3 data-number="2.2.2" class="anchored" data-anchor-id="multiple-images"><span class="header-section-number">2.2.2</span> Multiple Images</h3>
 <section id="new-analysis" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="new-analysis">New analysis</h4>
-<p>Before starting to analyse an image database the new project should have a clear folder structure. <code>MorFishJ</code> does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the ROIs and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.</p>
+<p>Before starting to analyse an image database the new project should have a clear folder structure. <code>MorFishJ</code> does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the Regions Of Interest (ROIs) and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.</p>
 <pre><code>./ProjectName/
 ├── raw_images
 │   ├── img1.JPG
