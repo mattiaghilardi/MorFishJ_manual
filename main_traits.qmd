@@ -140,4 +140,4 @@ The analysis of the image is completed. In case of single image analysis a windo
 
 ## Results
 
-The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in [@tbl-main-traits-def]. Currently, all linear measurements are in centimetres and all areas in squared centimetres. The last column, `time`, is the time spent to analyse the image (steps 1-13) in seconds.
+The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in [@tbl-main-traits-def]. Currently, all linear measurements are in *cm* and all areas in *cm^2^*. The last column, `time`, is the time spent to analyse the image (steps 1-13) in seconds.

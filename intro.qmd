@@ -15,9 +15,7 @@ Once ImageJ/Fiji is installed/updated, proceed with installing `MorFishJ` follow
     -   for people not familiar with GitHub: [click here](https://github.com/mattiaghilardi/MorFishJ) to go to the project's main page on GitHub, click on the green button `Code`, then click on `Download ZIP`, thus extract the content.\
 2.  Copy the `MorFishJ v0.0.1` folder in the `ImageJ/plugins/` or `Fiji.app/plugins/` directory.
 
-Now `MorFishJ` is installed. Open ImageJ/FIJI and click **Plugins --\> MorFishJ v{{< var version >}} --\> MorFishJ GUI**. The following GUI appears in the upper left corner of the screen.
-
-![](images/screenshots/MorFishJ_GUI_v0.0.1.png){fig-align="center" fig-alt="MorFishJ GUI" width="60%"}
+Now `MorFishJ` is installed. Open ImageJ/FIJI and click **Plugins --\> MorFishJ v{{< var version >}} --\> MorFishJ GUI**. The Graphical User Interface (GUI) ([Chapter -@sec-gui]) of `MorFishJ` appears in the upper left corner of the screen.
 
 ::: {.callout-tip}
 In Fiji the Plugins menu is often crowded, thus it may be easier to use the `Search` field under the toolbar to find and start `MorFishJ`.

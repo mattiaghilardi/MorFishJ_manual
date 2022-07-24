@@ -1,4 +1,4 @@
-# GUI
+# GUI {#sec-gui}
 
 ![](images/screenshots/MorFishJ_GUI_v0.0.1.png){width="70%" fig-align="center" fig-alt="MorFishJ GUI"}
 
@@ -44,17 +44,21 @@ Clicking on the `Single Image` button of the desired analysis before opening an 
 
 ![](images/screenshots/single_image_error.png){width="30%" fig-align="center" fig-alt="Error message for single image analysis"}
 
-To open an image click on **File --\> Open...** or use the shortcut **Ctrl+O** or drag the image over the ImageJ GUI.
+To open an image click on **File --\> Open...** or use the shortcut **Ctrl+O** or drag the image over the ImageJ main window.
 
-Once the image is opened click on the `Single Image` button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
+Once the image is opened, click on the `Single Image` button of the desired analysis. The image is duplicated and all the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
 
-The steps required to perform the selected analysis are explained in the following chapters.
+The steps required to perform the selected analysis are explained in:
+
+- [Chapter -@sec-main_traits]: **Main Traits**
+- [Chapter -@sec-head_angles]: **Head Angles**
+- [Chapter -@sec-gut_traits]: **Gut Traits**
 
 ### Multiple Images
 
 #### New analysis {-}
 
-Before starting to analyse an image database the new project should have a clear folder structure. `MorFishJ` does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the ROIs and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.
+Before starting to analyse an image database the new project should have a clear folder structure. `MorFishJ` does not require a fixed folder structure, but only an input directory where the raw images are stored and two output directories, one to save the Regions Of Interest (ROIs) and one to save the results and log files (although the same output directory could be used for all outputs). Therefore, you can set your own folder structure. However, it is advisable that each project has its own directory with the following structure.
 
 ```
 ./ProjectName/

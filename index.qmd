@@ -29,3 +29,7 @@ Additionally, traits are often defined and measured differently by different res
 ## About this manual {-}
 
 This manual is a step-by-step user guide to `MorFishJ`. It explains best practices for project organisation, walks through each implemented analysis, and provides detailed explanations and examples for specific steps.
+
+## Versioning {-}
+
+The manual follows the same versioning of `MorFishJ`. For each new release of `MorFishJ` this manual will be updated and will be given the same version number.
