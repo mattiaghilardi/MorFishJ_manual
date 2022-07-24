@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.32">
+<meta name="generator" content="quarto-1.0.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -214,12 +214,12 @@ div.csl-indent {
 <p>The <code>Gut Traits</code> analysis allows to measure three intestinal traits related to fish diet (<a href="#tbl-gut-def">Table&nbsp;<span>7.1</span></a>).</p>
 <div id="tbl-gut-def" class="anchored">
 <table class="table">
-<caption>Table 7.1: Morphometric parameters measured on fish intestine</caption>
+<caption>Table 7.1: Morphometric parameters measured on fish intestine (see <a href="#fig-gut-traits">Figure&nbsp;<span>7.1</span></a>)</caption>
 <colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 37%">
-<col style="width: 20%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 34%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -239,7 +239,7 @@ div.csl-indent {
 <tr class="even">
 <td>GD</td>
 <td>Gut diameter</td>
-<td>External diameter of the intestine (average of 10 measurements)</td>
+<td>External diameter of the intestine (average of 10 measurements: GD1-GD10)</td>
 <td><span class="citation" data-cites="Ghilardi2021">Ghilardi et al. (<a href="references.html#ref-Ghilardi2021" role="doc-biblioref">2021</a>)</span></td>
 </tr>
 <tr class="odd">
@@ -250,6 +250,12 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
+</div>
+<div id="fig-gut-traits" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/drawings/gut_traits_sketch.png" class="img-fluid figure-img" alt="Traits measured on fish intestine" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Figure 7.1: Morphometric parameters taken on fish intestine</figcaption><p></p>
+</figure>
 </div>
 <section id="analysis" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="analysis"><span class="header-section-number">7.1</span> Analysis</h2>
@@ -264,11 +270,29 @@ div.csl-indent {
 <p>This analysis has a few steps that require the user input:</p>
 <ol type="1">
 <li><p>Set the scale for the image as described in <a href="set_scale.html">Chapter&nbsp;<span>3</span></a>.</p></li>
-<li><p>Trace a segmented line following the midline of the intestine as shown below. After clicking <code>OK</code> 10 points appears equally distributed along this line.</p></li>
-<li><p>At the level of the point closest to the oesophagus, trace a straight line perpendicular to the midline traced in the previous step and joining the two margins of the intestine.</p></li>
-<li><p>Repeat step 3 for each point in order moving towards the anus.</p></li>
+<li><p>Trace a segmented line following the midline of the intestine as shown below.</p></li>
 </ol>
-<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new row will be added to the results file, the ROIs are saved in their directory. The current image is closed and the next is opened. Repeat steps 1-4 for all images.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/gut_length.png" class="img-fluid figure-img" alt="Example of midline along the intestine" style="width:80.0%"></p>
+</figure>
+</div>
+<p>After clicking <code>OK</code> 10 points appear equally distributed along this line.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/gut_points.png" class="img-fluid figure-img" alt="Example of points along the midline of the intestine" style="width:80.0%"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li><p>At the level of the point closest to the oesophagus, trace a straight line perpendicular to the midline traced in the previous step and joining the two margins of the intestine.</p></li>
+<li><p>Repeat step 3 for each point in order moving towards the anus. See example below.</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/screenshots/gut_diameter_example.png" class="img-fluid figure-img" alt="Example of intestinal diameter" style="width:80.0%"></p>
+</figure>
+</div>
+<p>The analysis of the image is completed. In case of single image analysis a window named <code>Traits</code> containing all the results appears. This can be saved by clicking on <code>File -&gt; Save As...</code>. All ROIs in the ROI manager can also be saved as a zip file by clicking on <code>More &gt;&gt;&gt; -&gt; Save...</code>. In case of multiple image analysis a new row will be added to the results file and the ROIs are saved in their directory. The current image is closed and the next is opened. Repeat steps 1-4 for all images.</p>
 </section>
 <section id="results" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="results"><span class="header-section-number">7.2</span> Results</h2>
