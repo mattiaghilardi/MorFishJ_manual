@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+@import 'https://fonts.googleapis.com/css2?family=Roboto&display=swap';
+
+$font-family: "Roboto", sans-serif;
+
+// Base document colors
+$body-bg: #181818;
+$body-color: white;
+$link-color: #75AADB;
+
+$light: #525252;
+
+// Navigation element colors
+$footer-bg: #181818;
+$sidebar-bg: #303030;
+
+// Bootstrap popovers
+$popover-bg: #242424;
+
+// Bootstrap inputs
+$input-bg: #242424;
+
+/*-- scss:rules --*/
+
+.layout-example {
+  background: $gray-700;
+}

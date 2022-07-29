@@ -20,10 +20,10 @@ book:
 
   page-footer:
     center:
-      - icon: github
+      - text: MorFishJ
         href: https://github.com/mattiaghilardi/MorFishJ
       - text: "License"
-        href: https://github.com/mattiaghilardi/MorFishJ/blob/main/LICENSE
+        href: http://creativecommons.org/licenses/by-nc-sa/4.0/
     background: light
 
   sidebar: 
@@ -48,7 +48,10 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: [cosmo, theme.scss] 
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Roboto"
     fig-cap-location: bottom
   pdf:
     documentclass: scrreprt
