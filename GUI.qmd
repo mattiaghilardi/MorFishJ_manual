@@ -1,6 +1,6 @@
 # GUI {#sec-gui}
 
-![](images/screenshots/MorFishJ_GUI_v0.0.1.png){width="70%" fig-align="center" fig-alt="MorFishJ GUI"}
+![](images/screenshots/MorFishJ_GUI_v0.1.0.png){width="70%" fig-align="center" fig-alt="MorFishJ GUI"}
 
 The GUI of `MorFishJ` provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.
 
