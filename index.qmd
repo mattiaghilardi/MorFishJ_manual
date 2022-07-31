@@ -33,3 +33,9 @@ This manual is a step-by-step user guide to `MorFishJ`. It explains best practic
 ## Versioning {-}
 
 The manual follows the same versioning of `MorFishJ`. For each new release of `MorFishJ` this manual will be updated and will be given the same version number.
+
+The latest version of the manual can always be accessed at <https://mattiaghilardi.github.io/MorFishJ_manual/>.
+
+Previous versions can be accessed at:
+
+- [v0.1.0](https://mattiaghilardi.github.io/MorFishJ_manual/v0.1.0/)
