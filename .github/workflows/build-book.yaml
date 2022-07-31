@@ -34,5 +34,7 @@ jobs:
         with:
           # The branch the action should deploy to.
           branch: gh-pages
+          # The folder the action should deploy to.
+          target-folder: latest
           # The folder the action should deploy. Adapt if you changed in Quarto config
           folder: _book
