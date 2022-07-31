@@ -1,1 +1,0 @@
-Sitemap: https://mattiaghilardi.github.io/MorFishJ_manual/sitemap.xml
