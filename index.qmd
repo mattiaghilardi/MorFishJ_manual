@@ -29,7 +29,7 @@ Mattia Ghilardi (2022). MorFishJ: A software package for fish traditional morpho
 A BibTeX entry is:
 
 ```
-@software{GhilardiMorFishJ2022,
+@software{,
   author       = {Mattia Ghilardi},
   title        = {{MorFishJ: A software package for fish traditional 
                    morphometrics}},
