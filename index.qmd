@@ -1,11 +1,5 @@
 # Introduction {-}
 
-::: {.callout-caution icon=false}
-## Status of the manual
-
-Hi there! This manual is a work-in-progress.
-:::
-
 [`MorFishJ`](https://github.com/mattiaghilardi/MorFishJ) is an open-source software package for traditional morphometric analysis of fish from side view images in ImageJ. With `MorFishJ` you can collect morphological trait data from fish images in a standardised and reproducible way through a semi-automated procedure, which accelerates data collection and increases data accuracy by reducing user bias.
 
 ## Motivation {-}
@@ -26,10 +20,35 @@ Additionally, traits are often defined and measured differently by different res
 
 `MorFishJ` allows users to perform a complete morphometric characterisation in a limited time while recording and storing all steps, and saving results in a ready-to-use format suitable for statistical analysis with multiple software. Analyses of large photographic databases are facilitated by allowing users to stop and restart their analyses without losing progress.
 
+To cite `MorFishJ` in publications use:
+
+```
+Mattia Ghilardi (2022). MorFishJ: A software package for fish traditional morphometrics (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.6969274
+```
+
+A BibTeX entry is:
+
+```
+@software{GhilardiMorFishJ2022,
+  author       = {Mattia Ghilardi},
+  title        = {{MorFishJ: A software package for fish traditional 
+                   morphometrics}},
+  month        = aug,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.6969274},
+  url          = {https://doi.org/10.5281/zenodo.6969274}
+}
+```
+
 ## About this manual {-}
 
 This manual is a step-by-step user guide to `MorFishJ`. It explains best practices for project organisation, walks through each implemented analysis, and provides detailed explanations and examples for specific steps.
 
+<!-- license -->
+ <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+ 
 ## Versioning {-}
 
 The manual follows the same versioning of `MorFishJ`. For each new release of `MorFishJ` this manual will be updated and will be given the same version number.
