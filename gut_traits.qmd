@@ -24,7 +24,7 @@ Once the steps described in @sec-setup are completed the screen will be populate
 
 This analysis has a few steps that require the user input:
 
-1. Set the scale for the image as described in [Chapter -@sec-set_scale].
+1. Set the scale for the image as described in [Chapter -@sec-image_scale].
 
 2. Trace a segmented line following the midline of the intestine as shown below.
 
@@ -44,4 +44,4 @@ The analysis of the image is completed. In case of single image analysis a windo
 
 ## Results
 
-The results file/table contains one row for each image and 16 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-5 are the traits described in [@tbl-gut-def] in *cm* (*cm^2^* for GS). The columns 6-15 are the 10 raw measurements of the diameter (GD1-GD10) in order from the oesophagous to the anus. The last column, `time`, is the time spent to analyse the image (steps 1-4) in seconds.
+The results file/table contains one row for each image and 16 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in *pixels/cm*. The columns 3-5 are the traits described in [@tbl-gut-def] in *cm* (*cm^2^* for GS). The columns 6-15 are the 10 raw measurements of the diameter (GD1-GD10) in order from the oesophagous to the anus. The last column, `time`, is the time spent to analyse the image (steps 1-4) in *seconds*.

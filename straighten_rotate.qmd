@@ -1,6 +1,6 @@
 # Straighten and rotate {#sec-straighten_rotate}
 
-Two analyses, `Main Traits` and `Head Angles`, require the fish to be in a straight and horizontal position. For such analyses the software allows to adjust the image if required. For the `Main Traits` analysis this is the second step, after setting the scale (as described in [Chapter -@sec-set_scale]), whereas for the `Head Angles` analysis it is the first step. The following dialog box appears.
+Two analyses, `Main Traits` and `Head Angles`, require the fish to be in a straight and horizontal position. For such analyses the software allows to adjust the image if required. For the `Main Traits` analysis this is the second step, after adding the scale as described in [Chapter -@sec-image_scale], whereas for the `Head Angles` analysis it is the first step. The following dialog box appears.
 
 ![](images/screenshots/adjust_image.png){width="50%" fig-align="center" fig-alt="Dialog for image adjustment"}
 

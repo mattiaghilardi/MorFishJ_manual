@@ -1,23 +1,57 @@
-# Set scale {#sec-set_scale}
+# Image scale {#sec-image_scale}
 
-Two analyses, `Main Traits` and `Gut Traits`, require to set the scale for the image. This is the first step of both analyses. The following dialog box appears.
+The first step of the `Main Traits` and `Gut Traits` analyses is to set the scale for the image. While for the `Main Traits` analysis this is optional, it is required for the `Gut Traits` analysis.
+
+## Main Traits scale
+
+When starting the `Main Traits` analysis the following dialog box appears.
+
+![](images/screenshots/image_scale.png){width="50%" fig-align="center" fig-alt="Image scale dialog"}
+
+There are three options:
+
+- Add a scale through a reference object in the image.
+- Add a scale through the known length of the fish.
+- Do not add a scale to the image.
+
+Check the box of the appropriate option to add a scale, or leave the boxes empty and click `OK` to continue without adding a scale. If both options are selected, a reference object will be used.
+
+### Scale through reference object {-}
+
+After selecting `Reference object` the following dialog box appears.
+
+![](images/screenshots/reference_scale_info.png){width="30%" fig-align="center" fig-alt="Reference scale instructions"}
+
+Trace a straight line on a reference object and click `OK`. The next dialog box appears.
+
+![](images/screenshots/reference_scale_dialog.png){width="40%" fig-align="center" fig-alt="Reference scale dialog"}
+
+Enter the known length of the traced line and select the unit from the drop-down list. Three options are available (*mm*, *cm*, and *inch*), but any unit will then be converted to *cm*. The traced line will be stored in the ROI Manager as `px.cm` and then saved with all other ROIs. The scale of the image, in *pixels/cm*, will be saved in the results file within the column `px.cm` to allow converting the results, which are saved in *pixels*, to *cm*, if preferred.
+
+### Scale through fish length {-}
+
+After selecting `Known fish length` the following dialog box appears.
+
+![](images/screenshots/known_length.png){width="50%" fig-align="center" fig-alt="Known fish length dialog"}
+
+Enter the known length of the fish, select the unit from the drop-down list, and select the type of length, either `standard length` or `total length`, from the drop-down list. As for the reference object, the scale of the image, in *pixels/cm*, will be saved in the results file within the column `px.cm` to allow converting the results, which are saved in *pixels*, to *cm*, if preferred.
+
+## Gut Traits scale
+
+The procedure to add a scale to the `Gut Traits` analysis is the same as using a reference scale in the `Main Traits` analysis.
+
+When starting the `Gut Traits` analysis the following dialog box appears.
 
 ![](images/screenshots/set_scale_info.png){width="30%" fig-align="center" fig-alt="Set scale instructions"}
 
 Trace a straight line on a reference object and click `OK`.
 
 ::: {.callout-tip}
-The reference object can also be the fish itself if its length (standard, fork, or total) is known. In this case trace a line over the fish to select the appropriate length.
+For the `Gut Traits` analysis the reference object could also be the fish itself if it is in the image and its length (standard, fork, or total) is known. In this case trace a line over the fish to select the appropriate length.
 :::
 
 The following dialog box appears.
 
 ![](images/screenshots/set_scale_dialog.png){width="40%" fig-align="center" fig-alt="Set scale dialog"}
 
-Enter the known length of the traced line and select the unit from the drop-down list. Three options are available (*mm*, *cm*, and *inch*), but any unit will then be converted to *cm*. Thus all linear measurements will be saved in *cm* and areas in *cm^2^*.
-
-The traced line will be stored in the ROI Manager as `px.cm` and then saved with all other ROIs. A column `px.cm` will also be included in the results file indicating the scale of the images in pixels/cm. 
-
-::: {.callout-warning}
-At the moment it is not possible to run the `Main Traits` and ` Gut Traits` analyses on images without a reference object or known fish length as setting the scale is required.
-:::
+Enter the known length of the traced line and select the unit from the drop-down list. Three options are available (*mm*, *cm*, and *inch*), but any unit will then be converted to *cm*. The traced line will be stored in the ROI Manager as `px.cm` and then saved with all other ROIs. The scale of the image, in *pixels/cm*, will be saved in the results file within the column `px.cm` to allow converting the results, which are saved in *cm*, to the original *pixels*, if preferred.

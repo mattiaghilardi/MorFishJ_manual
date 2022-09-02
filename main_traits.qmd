@@ -66,11 +66,11 @@ Once the steps described in @sec-setup are completed the screen will be populate
 - the MorFishJ GUI
 - a fish image (this is a duplicate of the raw image to prevent any modification)
 - the ROI manager
-- the `Set scale` dialog
+- the `Image scale` dialog
 
 While the majority of the analysis is automated, there are a number of steps that require the user input:
 
-1. Set the scale for the image as described in [Chapter -@sec-set_scale].
+1. If available, add a scale to the image as described in [Chapter -@sec-image_scale].
 
 2. Adjust the image if necessary as described in [Chapter -@sec-straighten_rotate].
 
@@ -142,4 +142,4 @@ The analysis of the image is completed. In case of single image analysis a windo
 
 ## Results
 
-The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in pixels/cm. The columns 3-24 are the morphometric measurements described in [@tbl-main-traits-def]. Currently, all linear measurements are in *cm* and all areas in *cm^2^*. The last column, `time`, is the time spent to analyse the image (steps 1-13) in seconds.
+The results file/table contains one row for each image and 25 columns. The first column, `image_id`, is the name of the image without extension. The second column, `px.cm`, is the scale of the image in *pixels/cm*. This will be `NA` for images without scale. The columns 3-24 are the morphometric measurements described in [@tbl-main-traits-def]. All linear measurements are in *pixels* and all areas in *pixels^2^*. The angle `EMa` is in *degrees*. The last column, `time`, is the time spent to analyse the image (steps 1-13) in *seconds*.
