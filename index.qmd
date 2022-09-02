@@ -36,7 +36,7 @@ A BibTeX entry for LaTeX users is:
   month        = aug,
   year         = 2022,
   publisher    = {Zenodo},
-  version      = {v{{< var version >}}},
+  version      = {v{{< var version >}} },
   doi          = {10.5281/zenodo.6969273},
   url          = {https://doi.org/10.5281/zenodo.6969273}
 }

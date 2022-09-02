@@ -36,6 +36,7 @@ jobs:
           branch: gh-pages
           # The folders and files to be preserved. Older versions of the manual.
           clean-exclude: |
+            v0.2.0/**
             v0.1.0/**
           # The folder the action should deploy. Adapt if you changed in Quarto config
           folder: _book
