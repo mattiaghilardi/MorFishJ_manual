@@ -49,7 +49,7 @@ This analysis has six steps that require the user input:
 
 ![](images/screenshots/tip_upper_jaw_head.png){width="80%" fig-align="center" fig-alt="Example of point at the tip of upper jaw"}
 
-4. Trace an ellipse around the eye as shown below (see [Elliptical Selection Tool](https://imagej.nih.gov/ij/docs/guide/146-19.html) for specific instructions on how to use this tool). After clicking `OK` five reference lines (L1-L5) are drawn.
+4. Trace an ellipse around the eye as shown below (see [Elliptical Selection Tool](https://imagej.nih.gov/ij/docs/guide/146-19.html) for specific instructions on how to use this tool). After clicking `OK` five reference lines (L1-L5) are drawn and saved in the ROI manager together with the ellipse (eye).
 
 ![](images/screenshots/eye_ellipse_head.png){width="80%" fig-align="center" fig-alt="Example of ellipse around the eye"}
 

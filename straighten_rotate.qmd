@@ -17,7 +17,9 @@ When the fish is bent, select `Straighten` and click `OK`. The following dialog 
 
 ![](images/screenshots/straighten_dialog.png){width="70%" fig-align="center" fig-alt="Dialog for fish straightening"}
 
-Follow the instructions given in the dialog box, create a segmented line selection, adjust the width and click `OK`. The fish will be straightened and in an horizontal position. The following figure shows an example of fish straightening.
+![](images/screenshots/line_width.png){width="35%" fig-align="center" fig-alt="Line Width window"}
+
+Follow the instructions given in the dialog box, create a segmented line selection, increase the line width until the whole fish falls within the shaded area and click `OK`. The fish will be straightened and in an horizontal position. The following figure shows an example of fish straightening.
 
 ::: {.panel-tabset}
 ## **Before**

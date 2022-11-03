@@ -73,6 +73,10 @@ Before starting to analyse an image database the new project should have a clear
 
 There are three subdirectories: one containing the raw images, one to save the ROIs and processed images, and one to save the results and log files.
 
+::: {.callout-important}
+Do NOT use the same directory as both input and output! This would prompt an error when trying to continue the analysis loading the `TraitLog` file.
+:::
+
 To start a new analysis click on the `Multiple Images...New` button of the desired analysis. The following dialog box appears.
 
 ![](images/screenshots/dialog_select_directories.png){width="70%" fig-align="center" fig-alt="Dialog for directories selection"}
