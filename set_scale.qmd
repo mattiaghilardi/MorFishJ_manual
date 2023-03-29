@@ -6,7 +6,7 @@ The first step of the `Main Traits` and `Gut Traits` analyses is to set the scal
 
 When starting the `Main Traits` analysis the following dialog box appears.
 
-![](images/screenshots/image_scale.png){width="50%" fig-align="center" fig-alt="Image scale dialog"}
+![](images/screenshots/image_scale.png){width="40%" fig-align="center" fig-alt="Image scale dialog"}
 
 There are three options:
 
@@ -32,7 +32,7 @@ Enter the known length of the traced line and select the unit from the drop-down
 
 After selecting `Known fish length` the following dialog box appears.
 
-![](images/screenshots/known_length.png){width="50%" fig-align="center" fig-alt="Known fish length dialog"}
+![](images/screenshots/known_length.png){width="40%" fig-align="center" fig-alt="Known fish length dialog"}
 
 Enter the known length of the fish, select the unit from the drop-down list, and select the type of length, either `standard length` or `total length`, from the drop-down list. As for the reference object, the scale of the image, in *pixels/cm*, will be saved in the results file within the column `px.cm` to allow converting the results, which are saved in *pixels*, to *cm*, if preferred.
 

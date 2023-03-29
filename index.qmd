@@ -33,7 +33,6 @@ A BibTeX entry for LaTeX users is:
   author       = {Mattia Ghilardi},
   title        = {{MorFishJ: A software package for fish traditional 
                    morphometrics}},
-  month        = aug,
   year         = 2022,
   publisher    = {Zenodo},
   version      = {v{{< var version >}} },
