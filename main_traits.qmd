@@ -108,6 +108,12 @@ The points that define the selection can be moved. To add a new point to the sel
 
 After clicking `OK` reference line L appears passing through the selected point and 14 new traits are drawn and added to the ROI manager together with all reference lines.
 
+::: {.callout-note}
+Update from v0.2.2.
+
+In fish with very anterior eyes, or positioned on top of the head (e.g. *Periophtalmus* spp. and many other blennies), the anterior edge of the orbit may lie outside the body outline. In such cases `AO = 0` and the ROI for AO is not saved.
+:::
+
 10. Select the outline of the pectoral fin as in the example below. After clicking `OK` this is saved in the ROI manager as PFs.
 
 ![](images/screenshots/pectoral_fin_outline.png){width="80%" fig-align="center" fig-alt="Example of pectoral fin outline"}

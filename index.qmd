@@ -23,7 +23,7 @@ Additionally, traits are often defined and measured differently by different res
 To cite `MorFishJ` in publications use:
 
 ```
-Mattia Ghilardi (2022). MorFishJ: A software package for fish traditional morphometrics (v{{< var version >}}). Zenodo. https://doi.org/10.5281/zenodo.6969273
+Mattia Ghilardi (2022). MorFishJ: A software package for fish traditional morphometrics. Zenodo. https://doi.org/10.5281/zenodo.6969273
 ```
 
 A BibTeX entry for LaTeX users is:
@@ -35,7 +35,6 @@ A BibTeX entry for LaTeX users is:
                    morphometrics}},
   year         = 2022,
   publisher    = {Zenodo},
-  version      = {v{{< var version >}} },
   doi          = {10.5281/zenodo.6969273},
   url          = {https://doi.org/10.5281/zenodo.6969273}
 }
@@ -53,6 +52,7 @@ The latest version of the manual can always be accessed at <https://mattiaghilar
 
 Previous versions can be accessed at:
 
+- [v0.2.1](https://mattiaghilardi.github.io/MorFishJ_manual/v0.2.1/)
 - [v0.2.0](https://mattiaghilardi.github.io/MorFishJ_manual/v0.2.0/)
 - [v0.1.0](https://mattiaghilardi.github.io/MorFishJ_manual/v0.1.0/)
 
