@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The MorFishJ User Manual - 5&nbsp; Main Traits</title>
+<title>5&nbsp; Main Traits – The MorFishJ User Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -55,12 +56,12 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-dd3fe1fda6e9a56c28e63d06fa572337.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-e7a68389c660022155603c2e7c2a8095.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -69,7 +70,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -78,6 +85,7 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -85,10 +93,11 @@ div.csl-indent {
 }</script>
 
 
-<meta name="twitter:title" content="The MorFishJ User Manual - 5&nbsp; Main Traits">
+<meta name="twitter:title" content="5&nbsp; Main Traits – The MorFishJ User Manual">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://mattiaghilardi.github.io/MorFishJ_manual/images/drawings/main_ref_lines_sketch.png">
 <meta name="twitter:creator" content="@MattiaGhila">
+<meta name="twitter:image:alt" content="Reference lines for main traits analysis">
 <meta name="twitter:image-height" content="1184">
 <meta name="twitter:image-width" content="2136">
 <meta name="twitter:card" content="summary_large_image">
@@ -100,13 +109,13 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./main_traits.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Main Traits</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./main_traits.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Main Traits</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -115,28 +124,28 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/logo/MorFishJ_logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
       <a href="./">The MorFishJ User Manual</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/mattiaghilardi/MorFishJ_manual" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-    <a href="./The-MorFishJ-User-Manual.pdf" rel="" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <a href="https://github.com/mattiaghilardi/MorFishJ_manual" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="./The-MorFishJ-User-Manual.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
     <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-bi-twitter pe-1"></i>
+              <i class="bi bi-twitter pe-1"></i>
             Twitter
             </a>
           </li>
           <li>
             <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-              <i class="bi bi-bi-facebook pe-1"></i>
+              <i class="bi bi-facebook pe-1"></i>
             Facebook
             </a>
           </li>
@@ -210,7 +219,7 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -220,7 +229,7 @@ div.csl-indent {
   <li><a href="#analysis" id="toc-analysis" class="nav-link active" data-scroll-target="#analysis"><span class="header-section-number">5.1</span> Analysis</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">5.2</span> Results</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/mattiaghilardi/MorFishJ_manual/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/mattiaghilardi/MorFishJ_manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -240,18 +249,28 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<p>The <code>Main Traits</code> analysis is the workhorse of <code>MorFishJ</code> as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines (<a href="#fig-main-ref-lines">Figure&nbsp;<span>5.1</span></a>, <a href="#tbl-main-ref-lines">Table&nbsp;<span>5.1</span></a>) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in <a href="#fig-main-traits">Figure&nbsp;<span>5.2</span></a> and <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a>.</p>
-<div id="fig-main-ref-lines" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/drawings/main_ref_lines_sketch.png" class="img-fluid figure-img" style="width:80.0%" alt="Reference lines for main traits analysis"></p>
-<figcaption class="figure-caption">Figure&nbsp;5.1: Reference lines traced on fish images for main traits analysis (see <a href="#tbl-main-ref-lines">Table&nbsp;<span>5.1</span></a> for descriptions)</figcaption>
+
+<p>The <code>Main Traits</code> analysis is the workhorse of <code>MorFishJ</code> as it performs a complete morphometric characterisation of fishes. It requires the user input to trace the outline of the body and pectoral fin, and to position some reference lines (<a href="#fig-main-ref-lines" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>, <a href="#tbl-main-ref-lines" class="quarto-xref">Table&nbsp;<span>5.1</span></a>) and landmark points. The coordinates of these lines and points allow to extract 22 morphometric measurements described in <a href="#fig-main-traits" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> and <a href="#tbl-main-traits-def" class="quarto-xref">Table&nbsp;<span>5.2</span></a>.</p>
+<div id="fig-main-ref-lines" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Reference lines for main traits analysis" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-main-ref-lines-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/drawings/main_ref_lines_sketch.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Reference lines for main traits analysis">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-main-ref-lines-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Reference lines traced on fish images for main traits analysis (see <a href="#tbl-main-ref-lines" class="quarto-xref">Table&nbsp;<span>5.1</span></a> for descriptions)
+</figcaption>
 </figure>
 </div>
-<div id="tbl-main-ref-lines" class="anchored">
-<table class="table">
-<caption>Table&nbsp;5.1: Description of reference lines traced on fish images for main traits analysis</caption>
+<div id="tbl-main-ref-lines" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-main-ref-lines-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.1: Description of reference lines traced on fish images for main traits analysis
+</figcaption>
+<div aria-describedby="tbl-main-ref-lines-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Reference line</th>
@@ -323,46 +342,64 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <div id="fig-main-traits" class="quarto-layout-panel">
-<figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-main-traits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 80.0%;justify-content: center;">
-<div id="fig-main-linear" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/drawings/main_traits_sketch.png" class="img-fluid figure-img" alt="Linear measurements" data-ref-parent="fig-main-traits"></p>
-<figcaption class="figure-caption">(a) Linear measurements</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-main-traits" style="flex-basis: 80.0%;justify-content: flex-start;">
+<div id="fig-main-linear" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Linear measurements">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-main-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/drawings/main_traits_sketch.png" class="img-fluid figure-img" data-ref-parent="fig-main-traits" alt="Linear measurements">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-main-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Linear measurements
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
-<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 80.0%;justify-content: center;">
-<div id="fig-main-areas" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/drawings/main_areas_sketch.png" class="img-fluid figure-img" alt="Surface areas" data-ref-parent="fig-main-traits"></p>
-<figcaption class="figure-caption">(b) Surface areas</figcaption>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-main-traits" style="flex-basis: 80.0%;justify-content: flex-start;">
+<div id="fig-main-areas" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Surface areas">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-main-areas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/drawings/main_areas_sketch.png" class="img-fluid figure-img" data-ref-parent="fig-main-traits" alt="Surface areas">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-main-areas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Surface areas
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: center;">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
 <p>&nbsp;</p>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5.2: Morphometric parameters taken on fish images (see <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a> for descriptions)</figcaption><p></p>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-main-traits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: Morphometric parameters taken on fish images (see <a href="#tbl-main-traits-def" class="quarto-xref">Table&nbsp;<span>5.2</span></a> for descriptions)
+</figcaption>
 </figure>
 </div>
-<div id="tbl-main-traits-def" class="anchored">
-<table class="table">
-<caption>Table&nbsp;5.2: Description of morphometric parameters taken on fish images</caption>
+<div id="tbl-main-traits-def" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-main-traits-def-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.2: Description of morphometric parameters taken on fish images
+</figcaption>
+<div aria-describedby="tbl-main-traits-def-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Code</th>
@@ -507,9 +544,11 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+</figure>
+</div>
 <section id="analysis" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="analysis"><span class="header-section-number">5.1</span> Analysis</h2>
-<p>Once the steps described in <a href="GUI.html#sec-setup"><span>Section&nbsp;2.2</span></a> are completed the screen will be populated with a number of windows:</p>
+<p>Once the steps described in <a href="GUI.html#sec-setup" class="quarto-xref"><span>Section 2.2</span></a> are completed the screen will be populated with a number of windows:</p>
 <ul>
 <li>the ImageJ/Fiji main window</li>
 <li>the MorFishJ GUI</li>
@@ -519,13 +558,13 @@ div.csl-indent {
 </ul>
 <p>While the majority of the analysis is automated, there are a number of steps that require the user input:</p>
 <ol type="1">
-<li><p>If available, add a scale to the image as described in <a href="set_scale.html">Chapter&nbsp;<span>3</span></a>.</p></li>
-<li><p>Adjust the image if necessary as described in <a href="straighten_rotate.html">Chapter&nbsp;<span>4</span></a>.</p></li>
+<li><p>If available, add a scale to the image as described in <a href="set_scale.html" class="quarto-xref">Chapter&nbsp;<span>3</span></a>.</p></li>
+<li><p>Adjust the image if necessary as described in <a href="straighten_rotate.html" class="quarto-xref">Chapter&nbsp;<span>4</span></a>.</p></li>
 <li><p>Select the orientation of the fish (i.e., whether the fish is facing left or right) from a drop-down list. This step is important for the correct automatic placement of some reference lines and points.</p></li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/orientation.png" class="img-fluid figure-img" style="width:30.0%" alt="Fish orientation"></p>
+<p><img src="images/screenshots/orientation.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%" alt="Fish orientation"></p>
 </figure>
 </div>
 <ol start="4" type="1">
@@ -546,7 +585,7 @@ Tip
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/fish_outline.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of fish outline"></p>
+<p><img src="images/screenshots/fish_outline.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of fish outline"></p>
 </figure>
 </div>
 <ol start="5" type="1">
@@ -554,7 +593,7 @@ Tip
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/ref_lineA.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of reference line A"></p>
+<p><img src="images/screenshots/ref_lineA.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of reference line A"></p>
 </figure>
 </div>
 <ol start="6" type="1">
@@ -562,7 +601,7 @@ Tip
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/ref_lineH.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of reference line H"></p>
+<p><img src="images/screenshots/ref_lineH.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of reference line H"></p>
 </figure>
 </div>
 <ol start="7" type="1">
@@ -570,7 +609,7 @@ Tip
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/ref_lineI.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of reference line I"></p>
+<p><img src="images/screenshots/ref_lineI.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of reference line I"></p>
 </figure>
 </div>
 <ol start="8" type="1">
@@ -578,7 +617,7 @@ Tip
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/eye_ellipse.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of ellipse around the eye"></p>
+<p><img src="images/screenshots/eye_ellipse.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of ellipse around the eye"></p>
 </figure>
 </div>
 <ol start="9" type="1">
@@ -586,7 +625,7 @@ Tip
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/pectoral_fin_insertion.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of point at the pectoral fin insertion"></p>
+<p><img src="images/screenshots/pectoral_fin_insertion.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of point at the pectoral fin insertion"></p>
 </figure>
 </div>
 <p>After clicking <code>OK</code> reference line L appears passing through the selected point and 14 new traits are drawn and added to the ROI manager together with all reference lines.</p>
@@ -609,7 +648,7 @@ Note
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/pectoral_fin_outline.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of pectoral fin outline"></p>
+<p><img src="images/screenshots/pectoral_fin_outline.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of pectoral fin outline"></p>
 </figure>
 </div>
 <ol start="11" type="1">
@@ -617,7 +656,7 @@ Note
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/pectoral_fin_length.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of pectoral fin length"></p>
+<p><img src="images/screenshots/pectoral_fin_length.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of pectoral fin length"></p>
 </figure>
 </div>
 <ol start="12" type="1">
@@ -625,7 +664,7 @@ Note
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/tip_upper_jaw.png" class="img-fluid figure-img" style="width:80.0%" alt="Example of point at the tip of upper jaw"></p>
+<p><img src="images/screenshots/tip_upper_jaw.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" alt="Example of point at the tip of upper jaw"></p>
 </figure>
 </div>
 <ol start="13" type="1">
@@ -650,14 +689,14 @@ Important
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/mouth_corner_correct.png" class="img-fluid figure-img" alt="Example of correct point at the mouth corner"></p>
+<p><img src="images/screenshots/mouth_corner_correct.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Example of correct point at the mouth corner"></p>
 </figure>
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/screenshots/mouth_corner_wrong.png" class="img-fluid figure-img" alt="Example of incorrect point at the mouth corner"></p>
+<p><img src="images/screenshots/mouth_corner_wrong.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Example of incorrect point at the mouth corner"></p>
 </figure>
 </div>
 </div>
@@ -668,10 +707,10 @@ Important
 </section>
 <section id="results" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="results"><span class="header-section-number">5.2</span> Results</h2>
-<p>The results file/table contains one row for each image and 25 columns. The first column, <code>image_id</code>, is the name of the image without extension. The second column, <code>px.cm</code>, is the scale of the image in <em>pixels/cm</em>. This will be <code>NA</code> for images without scale. The columns 3-24 are the morphometric measurements described in <a href="#tbl-main-traits-def">Table&nbsp;<span>5.2</span></a>. All linear measurements are in <em>pixels</em> and all areas in <em>pixels<sup>2</sup></em>. The angle <code>EMa</code> is in <em>degrees</em>. The last column, <code>time</code>, is the time spent to analyse the image (steps 1-13) in <em>seconds</em>.</p>
+<p>The results file/table contains one row for each image and 25 columns. The first column, <code>image_id</code>, is the name of the image without extension. The second column, <code>px.cm</code>, is the scale of the image in <em>pixels/cm</em>. This will be <code>NA</code> for images without scale. The columns 3-24 are the morphometric measurements described in <a href="#tbl-main-traits-def" class="quarto-xref">Table&nbsp;<span>5.2</span></a>. All linear measurements are in <em>pixels</em> and all areas in <em>pixels<sup>2</sup></em>. The angle <code>EMa</code> is in <em>degrees</em>. The last column, <code>time</code>, is the time spent to analyse the image (steps 1-13) in <em>seconds</em>. In case of multiple image analysis, before <code>time</code> there is an additional column, <code>remark</code>, which reports, if any, the observations written at the beginning of the analysis of each image.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-Barnett2006" class="csl-entry" role="listitem">
 Barnett, A., D. R. Bellwood, and A. S. Hoey. 2006. <span>“Trophic Ecomorphology of Cardinalfish.”</span> <em>Marine Ecology Progress Series</em> 322: 249–57. <a href="https://doi.org/10.3354/meps322249">https://doi.org/10.3354/meps322249</a>.
 </div>
@@ -735,6 +774,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -803,13 +869,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -844,18 +912,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -887,11 +944,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/mattiaghilardi\.github\.io\/MorFishJ_manual\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -901,8 +995,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -914,7 +1017,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -958,6 +1183,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -983,6 +1209,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1044,12 +1296,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./straighten_rotate.html" class="pagination-link">
+      <a href="./straighten_rotate.html" class="pagination-link" aria-label="Straighten and rotate">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Straighten and rotate</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./head_angles.html" class="pagination-link">
+      <a href="./head_angles.html" class="pagination-link" aria-label="Head Angles">
         <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Head Angles</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -1057,13 +1309,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">The content of this manual is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0)</a> <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i></div>   
+    <div class="nav-footer-left">
+<p>The content of this manual is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0)</a> <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">Made with <i class="fa-brands fa-quarto" aria-hidden="true"></i> <a href="https://quarto.org/">Quarto</a></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/mattiaghilardi/MorFishJ_manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-quarto" aria-hidden="true"></i> <a href="https://quarto.org/">Quarto</a></p>
+</div>
   </div>
 </footer>
+
 
 
 
