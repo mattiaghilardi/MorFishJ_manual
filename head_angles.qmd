@@ -65,4 +65,4 @@ The analysis of the image is completed. In case of single image analysis a windo
 
 ## Results
 
-The results file/table contains one row for each image and 5 columns. The first column, `image_id`, is the name of the image without extension. The columns 2-4 are the angles described in [@tbl-angles-def] in *degrees*. The last column, `time`, is the time spent to analyse the image (steps 1-6) in *seconds*.
+The results file/table contains one row for each image and 5 columns. The first column, `image_id`, is the name of the image without extension. The columns 2-4 are the angles described in [@tbl-angles-def] in *degrees*. The last column, `time`, is the time spent to analyse the image (steps 1-6) in *seconds*. In case of multiple image analysis, before `time` there is an additional column, `remark`, which reports, if any, the observations written at the beginning of the analysis of each image.

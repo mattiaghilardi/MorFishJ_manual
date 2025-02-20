@@ -1,8 +1,8 @@
 # Installation
 
-[ImageJ](https://imagej.nih.gov/ij/) is an open source image processing program commonly used by researchers to extract morphometric data from fish images. As such, `MorFishJ` has been developed as an extension of this software and it can be used in both ImageJ 1.x and Fiji (ImageJ2) distribution.
+[ImageJ](https://imagej.net/ij/) is an open source image processing program commonly used by researchers to extract morphometric data from fish images. As such, `MorFishJ` has been developed as an extension of this software and it can be used in both ImageJ 1.x and Fiji (ImageJ2) distribution.
 
-Therefore, the installation of ImageJ (instructions [here](https://imagej.nih.gov/ij/download.html)) or Fiji (instructions [here](https://imagej.net/software/fiji/downloads)) is required before installing `MorFishJ`.
+Therefore, the installation of ImageJ (instructions [here](https://imagej.net/ij/download.html)) or Fiji (instructions [here](https://imagej.net/software/fiji/downloads)) is required before installing `MorFishJ`.
 
 ::: {.callout-warning}
 `MorFishJ` depends on `ImageJ {{< var IJ_dep_version >}}`, thus, if ImageJ/Fiji was previously installed, first check the current ImageJ version below the toolbar. If it is older than {{< var IJ_dep_version >}}, to update ImageJ click **Help --\> Update ImageJ...**, choose the latest version and click OK. Then ImageJ/Fiji must be restarted.

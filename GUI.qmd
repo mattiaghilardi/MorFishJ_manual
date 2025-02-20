@@ -92,7 +92,11 @@ Once all the fields are completed click `OK`. Two files are created in the selec
 Do not edit the `TraitLog` file by hand and do not change its directory!
 :::
 
-The first image in the input directory is automatically opened and duplicated. All the following steps will be performed on the duplicated image to avoid any unwanted modification of the raw image. The `ROI Manager` window is automatically opened and the first dialog box appears, to either set the scale or adjust the image, depending on the type of analysis selected.
+The first image in the input directory is automatically opened and duplicated, and the following dialog box appears. All the next steps will be performed on the duplicated image to avoid any unwanted modification of the raw image.
+
+![](images/screenshots/image_quality.png){width="60%" fig-align="center" fig-alt="Dialog for image quality"}
+
+Select `Skip image` to skip the current image if it is not needed or is of poor quality and move directly to the next one. Optionally, add any observations to the current image in the `Remarks` field. These will be saved in the results under the column "remark". This dialog appears every time a new image is opened.
 
 The steps required to perform the selected analysis are explained in:
 
