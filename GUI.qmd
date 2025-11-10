@@ -4,6 +4,8 @@
 
 The GUI of `MorFishJ` provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.
 
+Since v0.4.0 the GUI also includes icons in the bottom right corner that allow direct access to the documentation and source code.
+
 ## Morphometric analyses
 
 Three morphometric analyses are currently available in `MorFishJ`:
