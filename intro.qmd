@@ -19,3 +19,7 @@ Now `MorFishJ` is installed. Open ImageJ/FIJI and click **Plugins --\> MorFishJ 
 ::: {.callout-tip}
 In Fiji the *Plugins* menu is often crowded, thus it may be easier to use the `Search` field under the toolbar to find and start `MorFishJ`.
 :::
+
+::: {.callout-warning}
+Starting with version 0.4.0 `MorFishJ` depends on the Java library `jsoup`. While this library is included by default in Fiji, it is not included in ImageJ 1.x. Thus, when trying to start `MorFishJ`, you may encounter the following error: `ImportError: No module named jsoup`. If this happens, download the `jsoup` jar file from [here](https://jsoup.org/download) and place it in the `ImageJ/plugins/jars` directory. Restart ImageJ and the issue should be resolved.
+:::
