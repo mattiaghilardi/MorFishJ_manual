@@ -64,7 +64,7 @@
     "href": "GUI.html",
     "title": "2  GUI",
     "section": "",
-    "text": "2.1 Morphometric analyses\nThe GUI of MorFishJ provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.\nSince v0.4.0 the GUI also includes icons in the bottom right corner that allow direct access to the documentation and source code.\nThree morphometric analyses are currently available in MorFishJ:",
+    "text": "2.1 Morphometric analyses\nThe GUI of MorFishJ provides a simple and direct access to all the morphometric analyses. Each analysis can be started by clicking on the appropriate button.\nStarting with version 0.4.0 the GUI also includes icons in the bottom right corner that allow direct access to the documentation and source code.\nThree morphometric analyses are currently available in MorFishJ:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>GUI</span>"
     ]
