@@ -9,7 +9,7 @@ It allows to select one of two options:
 -   `Straighten`: to straighten the fish if it is in a bent position.
 -   `Rotate`: to rotate the image and set the fish in an horizontal position.
 
-Therefore, if the fish is not straight and horizontal, select the appropriate option and click `OK`. Otherwise, click `OK` without selecting any option and continue.
+Therefore, if the fish is not straight and horizontal, select the appropriate option and click `OK`. Otherwise, select `No adjustments` and click `OK` to continue.
 
 ## Straighten {-}
 

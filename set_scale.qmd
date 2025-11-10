@@ -14,7 +14,7 @@ There are three options:
 - Add a scale through the known length of the fish.
 - Do not add a scale to the image.
 
-Check the box of the appropriate option to add a scale, or leave the boxes empty and click `OK` to continue without adding a scale. If both options are selected, a reference object will be used.
+Select the appropriate option to add a scale, or select `No scale available` and click `OK` to continue without adding a scale.
 
 ### Scale through reference object {-}
 

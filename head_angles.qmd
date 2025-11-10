@@ -41,7 +41,7 @@ This analysis has six steps that require the user input:
 
 1. Adjust the image if necessary as described in [Chapter -@sec-straighten_rotate].
 
-2. Select the orientation of the fish (i.e., whether the fish is facing left or right) from a drop-down list. This step is important for the correct automatic placement of the reference lines.
+2. Select the orientation of the fish (i.e., whether the fish is facing left or right). This step is important for the correct automatic placement of the reference lines.
 
 ![](images/screenshots/orientation.png){width="30%" fig-align="center" fig-alt="Fish orientation"}
 

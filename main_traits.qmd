@@ -74,7 +74,7 @@ While the majority of the analysis is automated, there are a number of steps tha
 
 2. Adjust the image if necessary as described in [Chapter -@sec-straighten_rotate].
 
-3. Select the orientation of the fish (i.e., whether the fish is facing left or right) from a drop-down list. This step is important for the correct automatic placement of some reference lines and points.
+3. Select the orientation of the fish (i.e., whether the fish is facing left or right). This step is important for the correct automatic placement of some reference lines and points.
 
 ![](images/screenshots/orientation.png){width="30%" fig-align="center" fig-alt="Fish orientation"}
 
