@@ -74,7 +74,7 @@
     "href": "GUI.html#morphometric-analyses",
     "title": "2  GUI",
     "section": "",
-    "text": "Main Traits\n\n\n\nThe workhorse of MorFishJ. Performs a complete morphometric analysis measuring 22 traits that cover all body parts visible from side view images, excluding dorsal, pelvic, and anal fins.\n\n\n\n\n\n\n\n\n Head Angles\n\n\n\nIt allows to measure three head angles related to vision and feeding (Brandl and Bellwood 2013; Bellwood et al. 2014; Brandl, Robbins, and Bellwood 2015).\n\n\n\n\n\n\n\n\n Gut Traits\n\n\n\nIt allows to measure three intestinal traits related to fish diet (Ghilardi et al. 2021).",
+    "text": "Note Main Traits\n\n\n\nThe workhorse of MorFishJ. Performs a complete morphometric analysis measuring 22 traits that cover all body parts visible from side view images, excluding dorsal, pelvic, and anal fins.\n\n\n\n\n\n\n\n\nNote Head Angles\n\n\n\nIt allows to measure three head angles related to vision and feeding (Brandl and Bellwood 2013; Bellwood et al. 2014; Brandl, Robbins, and Bellwood 2015).\n\n\n\n\n\n\n\n\nNote Gut Traits\n\n\n\nIt allows to measure three intestinal traits related to fish diet (Ghilardi et al. 2021).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>GUI</span>"
     ]
