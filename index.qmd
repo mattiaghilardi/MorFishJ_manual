@@ -52,6 +52,7 @@ The latest version of the manual can always be accessed at <https://mattiaghilar
 
 Previous versions can be accessed at:
 
+- [v0.3.0](https://mattiaghilardi.github.io/MorFishJ_manual/v0.3.0/)
 - [v0.2.2](https://mattiaghilardi.github.io/MorFishJ_manual/v0.2.2/)
 - [v0.2.1](https://mattiaghilardi.github.io/MorFishJ_manual/v0.2.1/)
 - [v0.2.0](https://mattiaghilardi.github.io/MorFishJ_manual/v0.2.0/)
