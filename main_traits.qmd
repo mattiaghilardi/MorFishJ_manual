@@ -81,7 +81,7 @@ While the majority of the analysis is automated, there are a number of steps tha
 4. Select the fish outline following the instruction in the dialog. Trace a polygon around the body and caudal fin, excluding the dorsal, pelvic, and anal fins as in the example below. Also avoid including any portion of pectoral fin protruding from the body area. Once the selection is completed it can be adjusted as needed.
 
 ::: {.callout-tip}
-The points that define the selection can be moved. To add a new point to the selection press `Shift` and click on an existing point. To remove one point press `Alt` and click on the point. See [Polygon Selection Tool](https://imagej.nih.gov/ij/docs/guide/146-19.html).
+The points that define the selection can be moved. To add a new point to the selection press `Shift` and click on an existing point. To remove one point press `Alt` and click on the point. See [Polygon Selection Tool](https://imagej.net/ij/docs/guide/146-19.html).
 :::
 
 ![](images/screenshots/fish_outline.png){width="80%" fig-align="center" fig-alt="Example of fish outline"}
@@ -98,7 +98,7 @@ The points that define the selection can be moved. To add a new point to the sel
 
 ![](images/screenshots/ref_lineI.png){width="80%" fig-align="center" fig-alt="Example of reference line I"}
 
-8. Trace an ellipse around the eye as in the example below (see [Elliptical Selection Tool](https://imagej.nih.gov/ij/docs/guide/146-19.html) for specific instructions on how to use this tool). After clicking `OK` two new reference lines (J-K) are drawn perpendicular intersecting at the eye centroid.
+8. Trace an ellipse around the eye as in the example below (see [Elliptical Selection Tool](https://imagej.net/ij/docs/guide/146-19.html) for specific instructions on how to use this tool). After clicking `OK` two new reference lines (J-K) are drawn perpendicular intersecting at the eye centroid.
 
 ![](images/screenshots/eye_ellipse.png){width="80%" fig-align="center" fig-alt="Example of ellipse around the eye"}
 
